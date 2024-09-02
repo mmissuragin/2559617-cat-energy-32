@@ -47,7 +47,11 @@
       <h2 class="appeal__title">Функциональное питание для котов</h2>
       <p class="appeal__description">Занялся собой? Займись котом!</p>
       <a class="appeal__button" href="/">ПОДОБРАТЬ ПРОГРАММУ</a>
-      <img class="appeal__image" src="#" width="552" height="499" alt="Большая баночка корма">
+      <picture>
+        <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/desktop/hero-pack-desktop@1x.png 1x, images/desktop/hero-pack-desktop@2x.png 2x">
+        <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/tablet/hero-pack-tablet@1x.png 1x, images/tablet/hero-pack-tablet@2x.png 2x">
+        <img class="appeal__image" src="images/mobile/hero-pack-mobile@1x.png" srcset="images/mobile/hero-pack-mobile@2x.png 2x" width="280" height="270" alt="Большая баночка корма">
+      </picture>
     </section>
 
     <section class="physique">
@@ -107,7 +111,15 @@
         </dl>
 
         <p class="example__expenses">Затраты на питание: 15 000 руб.</p>
-        <img class="example__image" src="#" width="1" height="1" alt="Картинка двух половинчатых котов">
+        <picture>
+          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/tablet/cat-after-tablet@1x.webp 1x, images/cat-after-table@2x.png 2x">
+          <img class="example__image" src="images/mobile/cat-after-mobile@1x.png" srcset="images/mobile/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот">
+        </picture>
+
+        <picture>
+          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/tablet/cat-before-tablet@1x.webp 1x, images/cat-before-table@2x.png 2x">
+          <img class="example__image" src="images/mobile/cat-before-mobile@1x.png" srcset="images/mobile/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот">
+        </picture>
         <button class="example__button" type="button">Кнопка для ненужного адаптива</button>
       </div>
     </section>

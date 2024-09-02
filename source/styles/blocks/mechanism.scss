@@ -3,11 +3,26 @@
 }
 
 .mechanism__title {
-  /* empty */
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../fonts/oswald/oswaldregular.woff2") format("woff2");
+  font-display: swap;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+  text-align: center;
 }
 
 .mechanism__list {
-  /* empty */
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../fonts/lato/Lato-Regular.woff2") format("woff2");
+  font-display: swap;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
 }
 
 .mechanism__item {
@@ -17,6 +32,7 @@
 .mechanism__item--leaf {
   /* empty */
 }
+
 
 .mechanism__item--glass {
   /* empty */

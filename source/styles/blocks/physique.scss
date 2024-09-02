@@ -7,21 +7,43 @@
 }
 
 .physique__option--slim {
-  /* empty */
+  background-color: #f2f2f2;
 }
 
 .physique__title {
-  /* empty */
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../fonts/oswald/oswaldregular.woff2") format("woff2");
+  font-display: swap;
+  font-size: 24px;
+  line-height: 37px;
+  color: #000000;
 }
 
 .physique__description {
-  /* empty */
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../fonts/lato/Lato-Regular.woff2") format("woff2");
+  font-display: swap;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
 }
 
 .physique__transition {
-  /* empty */
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../fonts/oswald/oswaldregular.woff2") format("woff2");
+  font-display: swap;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+  text-decoration: none;
 }
 
 .physique__option--fat {
-  /* empty */
+  background-color: #f2f2f2;
 }

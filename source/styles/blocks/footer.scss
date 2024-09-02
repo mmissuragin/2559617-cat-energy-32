@@ -1,5 +1,5 @@
 .footer {
-  /* empty */
+  background-color: #f2f2f2;
 }
 
 .footer__wrapper {
@@ -23,15 +23,15 @@
 }
 
 .footer__social-item {
-  .footer__social-item--vk {
+  &footer__social-item--vk {
     /* empty */
   }
 
-  .footer__social-item--youtube {
+  &footer__social-item--youtube {
     /* empty */
   }
 
-  .footer__social-item--telegram {
+  &footer__social-item--telegram {
     /* empty */
   }
 }
@@ -46,5 +46,14 @@
 }
 
 .footer__academy-text {
-  /* empty */
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../fonts/lato/Lato-Regular.woff2") format("woff2");
+  font-display: swap;
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+  text-align: right;
+  text-decoration: none;
 }

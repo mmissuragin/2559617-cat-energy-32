@@ -3,9 +3,13 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Кэт энерджи</title>
+  <title>Кэт энерджи: Главная</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -17,18 +21,18 @@
     </a>
 
     <nav class="main-nav">
-      <button class="main-nav__toogle" type="button">
+      <button class="main-nav__button main-nav__button--toggle" type="button">
         <span class="visually-hidden">Открыть главное меню</span>
       </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--current">
+      <div class="main-nav__menu">
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active">
             <a href="/">Главная</a>
           </li>
-          <li class="site-list__item">
+          <li class="main-nav__item">
             <a href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="site-list__item">
+          <li class="main-nav__item">
             <a href="/">Подбор программы</a>
           </li>
         </ul>
@@ -42,7 +46,7 @@
     <section class="appeal">
       <h2 class="appeal__title">Функциональное питание для котов</h2>
       <p class="appeal__description">Занялся собой? Займись котом!</p>
-      <a class="appeal__button" href="/">Подобрать программу</a>
+      <a class="appeal__button" href="/">ПОДОБРАТЬ ПРОГРАММУ</a>
       <img class="appeal__image" src="#" width="552" height="499" alt="Большая баночка корма">
     </section>
 
@@ -142,7 +146,7 @@
         </ul>
 
         <div class="footer__academy">
-          <a class="footer__academy-text" href="/">HTML Academy</a>
+          <a class="footer__academy-text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
       </div>
     </footer>

@@ -3,15 +3,39 @@
 }
 
 .appeal__title {
-  /* empty */
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../fonts/oswald/oswaldregular.woff2") format("woff2");
+  font-display: swap;
+  font-size: 60px;
+  line-height: 60px;
+  color: 000000;
 }
 
 .appeal__description {
-  /* empty */
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../fonts/oswald/oswaldregular.woff2") format("woff2");
+  font-display: swap;
+  font-size: 20px;
+  line-height: 20px;
+  color: 000000;
 }
 
 .appeal__button {
-  /* empty */
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../fonts/oswald/oswaldregular.woff2") format("woff2");
+  font-display: swap;
+  font-size: 20px;
+  line-height: 26px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #68b738;
+  text-decoration: none;
 }
 
 .appeal__image {

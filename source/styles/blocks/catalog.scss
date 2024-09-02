@@ -3,7 +3,14 @@
 }
 
 .catalog__title {
-  /* empty */
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../fonts/oswald/oswaldregular.woff2") format("woff2");
+  font-display: swap;
+  font-size: 60px;
+  line-height: 60px;
+  color: #000000;
 }
 
 .catalog__list {
@@ -11,7 +18,7 @@
 }
 
 .catalog__item {
-  /* empty */
+  background-color: #f2f2f2;
 }
 
 .catalog__item-link {
@@ -27,7 +34,15 @@
 }
 
 .catalog__item-title {
-  /* empty */
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../fonts/oswald/oswaldregular.woff2") format("woff2");
+  font-display: swap;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
 }
 
 .catalog__item-info {
@@ -35,7 +50,14 @@
 }
 
 .catalog__item-parameters {
-  /* empty */
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../fonts/lato/Lato-Regular.woff2") format("woff2");
+  font-display: swap;
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
 }
 
 .catalog__item-parameter-title {
@@ -47,8 +69,43 @@
   /* empty */
 }
 
+.catalog__item-description {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../fonts/lato/Lato-Regular.woff2") format("woff2");
+  font-display: swap;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+}
+
 .catalog__item-button {
-  /* empty */
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../fonts/oswald/oswaldregular.woff2") format("woff2");
+  font-display: swap;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #68b738;
+  text-transform: uppercase;
+}
+
+.catalog__item-button--more {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../fonts/oswald/oswaldregular.woff2") format("woff2");
+  font-display: swap;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  text-decoration: none;
+  background-color: #f2f2f2;
+  text-transform: uppercase;
 }
 
 

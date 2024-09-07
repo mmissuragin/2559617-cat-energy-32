@@ -20,4 +20,53 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+  list-style: none;
+}
+
+.mechanism__item--leaf::before {
+  content: "";
+  background-image: url("../../icons/icon-leaf.svg");
+  background-color: $green;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30px 32px;
+  width: 60px;
+  height: 60px;
+  display: block;
+}
+
+.mechanism__item--glass::before {
+  content: "";
+  background-image: url("../../icons/icon-glass.svg");
+  background-color: $green;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30px 32px;
+  width: 60px;
+  height: 60px;
+  display: block;
+}
+
+.mechanism__item--dinnerware::before {
+  content: "";
+  background-image: url("../../icons/icon-dinnerware.svg");
+  background-color: $green;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30px 32px;
+  width: 60px;
+  height: 60px;
+  display: block;
+}
+
+.mechanism__item--clock::before {
+  content: "";
+  background-image: url("../../icons/icon-clock.svg");
+  background-color: $green;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30px 32px;
+  width: 60px;
+  height: 60px;
+  display: block;
 }

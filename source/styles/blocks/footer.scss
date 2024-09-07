@@ -14,3 +14,51 @@
   text-align: right;
   text-decoration: none;
 }
+
+.footer__social-list {
+  list-style: none;
+}
+
+.footer__social-item--vk::before {
+  content: "";
+  background-image: url("../../icons/vkontakte.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 28px;
+  height: 22px;
+  display: block;
+}
+
+.footer__social-item--youtube::before {
+  content: "";
+  background-image: url("../../icons/youtube.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 28px;
+  height: 22px;
+  display: block;
+}
+
+.footer__social-item--telegram::before {
+  content: "";
+  background-image: url("../../icons/telegram.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 28px;
+  height: 22px;
+  display: block;
+}
+
+.footer__academy-text::after {
+  content: "";
+  background-image: url("../../icons/logo-akademy-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 27px;
+  height: 34px;
+  display: block;
+}

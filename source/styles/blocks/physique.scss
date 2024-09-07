@@ -1,6 +1,4 @@
-.physique__option--slim {
-  background-color: #f2f2f2;
-}
+
 
 .physique__title {
   font-family: "Oswald", sans-serif;
@@ -21,7 +19,7 @@
   font-display: swap;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: $grey;
 }
 
 .physique__transition {
@@ -36,6 +34,38 @@
   text-decoration: none;
 }
 
-.physique__option--fat {
-  background-color: #f2f2f2;
+.physique__title::before {
+  content: "";
+  background-image: url("../../icons/cat-sitting.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50px;
+  height: 53px;
+  display: block;
+}
+
+@media (min-width: $tablet) {
+  .physique__title::before {
+    width: 200px;
+    height: 211px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .physique__title::before {
+    width: 100px;
+    height: 106px;
+  }
+}
+
+.physique__transition::after {
+  content: "";
+  background-image: url("../../icons/arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 24px;
+  height: 12px;
+  display: block;
 }

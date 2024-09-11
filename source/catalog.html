@@ -48,7 +48,6 @@
   <main class="catalog">
     <h1 class="catalog__title">Каталог продукции</h1>
     <ul class="catalog__list">
-
       <li class="catalog__item">
         <a class="catalog__item-link" href="/">
           <div class="catalog__item-image-wrapper">
@@ -71,7 +70,7 @@
             <dt class="catalog__item-parameter-title">Цена</dt>
             <dd class="catalog__item-parameter-value">700 ₽</dd>
           </dl>
-          <a class="catalog__item-button" href="#">Заказать</a>
+          <a class="button" href="#">ЗАКАЗАТЬ</a>
         </div>
       </li>
 
@@ -97,7 +96,7 @@
             <dt class="catalog__item-parameter-title">Цена</dt>
             <dd class="catalog__item-parameter-value">1000 ₽</dd>
           </dl>
-          <a class="catalog__item-button" href="#">Заказать</a>
+          <a class="button" href="#">ЗАКАЗАТЬ</a>
         </div>
       </li>
 
@@ -123,7 +122,7 @@
             <dt class="catalog__item-parameter-title">Цена</dt>
             <dd class="catalog__item-parameter-value">700 ₽</dd>
           </dl>
-          <a class="catalog__item-button" href="#">Заказать</a>
+          <a class="button" href="#">ЗАКАЗАТЬ</a>
         </div>
       </li>
 
@@ -149,7 +148,7 @@
             <dt class="catalog__item-parameter-title">Цена</dt>
             <dd class="catalog__item-parameter-value">1000 ₽</dd>
           </dl>
-          <a class="catalog__item-button" href="#">Заказать</a>
+          <a class="button" href="#">ЗАКАЗАТЬ</a>
         </div>
       </li>
 
@@ -175,7 +174,7 @@
             <dt class="catalog__item-parameter-title">Цена</dt>
             <dd class="catalog__item-parameter-value">400 ₽</dd>
           </dl>
-          <a class="catalog__item-button" href="#">Заказать</a>
+          <a class="button" href="#">ЗАКАЗАТЬ</a>
         </div>
       </li>
 
@@ -201,7 +200,7 @@
             <dt class="catalog__item-parameter-title">Цена</dt>
             <dd class="catalog__item-parameter-value">700 ₽</dd>
           </dl>
-          <a class="catalog__item-button" href="#">Заказать</a>
+          <a class="button" href="#">ЗАКАЗАТЬ</a>
         </div>
       </li>
 
@@ -227,14 +226,14 @@
             <dt class="catalog__item-parameter-title">Цена</dt>
             <dd class="catalog__item-parameter-value">700 ₽</dd>
           </dl>
-          <a class="catalog__item-button" href="#">Заказать</a>
+          <a class="button" href="#">ЗАКАЗАТЬ</a>
         </div>
       </li>
 
-      <li class="catalog__item catalog__item--more">
-        <h3 class="catalog__item-title catalog__item-title--more ">Показать еще 100500 товаров</h3>
-        <p class="catalog__item-description">На самом деле вкусов гораздо больше!</p>
-        <a class="catalog__item-button catalog__item-button--more" href="#">Показать все</a>
+      <li class="catalog__item catalog__item--more"></li>
+      <h3 class="catalog__item-title catalog__item-title--more ">ПОКАЗАТЬ ЕЩЕ 100500 ТОВАРОВ</h3>
+      <p class="catalog__item-description">На самом деле вкусов гораздо больше!</p>
+      <a class="button button--more" href="#">ПОКАЗАТЬ ВСЕ</a>
       </li>
     </ul>
   </main>
@@ -248,7 +247,7 @@
           <span class="additional-products__item-quantity">1 упаковка (100 г)</span>
           <span class="additional-products__item-price">200 ₽</span>
         </p>
-        <a class="additional-products__item-button" href="#">Заказать</a>
+        <a class="button" href="#">ЗАКАЗАТЬ</a>
       </li>
       <li class="additional-products__item">
         <h3 class="additional-products__item-title">Питьевая вода</h3>
@@ -256,7 +255,7 @@
           <span class="additional-products__item-quantity">5 литров</span>
           <span class="additional-products__item-price">50 ₽</span>
         </p>
-        <a class="additional-products__item-button" href="#">Заказать</a>
+        <a class="button" href="#">ЗАКАЗАТЬ</a>
       </li>
       <li class="additional-products__item">
         <h3 class="additional-products__item-title">Молоко</h3>
@@ -264,7 +263,7 @@
           <span class="additional-products__item-quantity">1 литр</span>
           <span class="additional-products__item-price">100 ₽</span>
         </p>
-        <a class="additional-products__item-button" href="#">Заказать</a>
+        <a class="button" href="#">ЗАКАЗАТЬ</a>
       </li>
       <li class="additional-products__item">
         <h3 class="additional-products__item-title">Витамины</h3>
@@ -272,12 +271,15 @@
           <span class="additional-products__item-quantity">1 упаковка (30 г)</span>
           <span class="additional-products__item-price">300 ₽</span>
         </p>
-        <a class="additional-products__item-button" href="#">Заказать</a>
+        <a class="button" href="#">ЗАКАЗАТЬ</a>
       </li>
     </ul>
+  </section>
 
-    <div class="additional-products__gift">
-      <p class="additional-products__gift-text">Закажите все и получите чехол для кота в подарок!</p>
+  <section class="gift">
+    <div class="gift_wrapper">
+      <h2 class="visually-hidden">Подарок</h2>
+      <p class="gift-text">Закажите все и получите чехол для кота в подарок!</p>
     </div>
   </section>
 
@@ -287,16 +289,16 @@
     <form class="mailing__form" action="https://echo.htmlacademy.ru/" method="post">
       <label class="visually-hidden" for="email">Введите ваш E-Mail:</label>
       <input class="mailing__form-email" type="email" id="email" placeholder="Введите ваш E-Mail" name="E-mail">
-      <button class="mailing__form-button" type="submit">Подписаться</button>
     </form>
+    <a class="button" href="#">ПОДПИСАТЬСЯ</a>
   </section>
 
   <section class="cooperation">
     <div class="cooperation__wrapper">
-      <h3 class="cooperation__title">Приглашаем к сотрудничеству дилеров!</h3>
-      <p class="cooperation__info">
-        <span class="cooperation__info-adress">ул. Большая Конюшенная, д. 19/8</span>
-        <span class="cooperation__info-city">Санкт-Петербург</span>
+      <h3 class="cooperation__title">ПРИГЛАШАЕМ К СОТРУДНИЧЕСТВУ ДИЛЕРОВ!</h3>
+      <p class="cooperation__adress">
+        <span>ул. Большая Конюшенная, д. 19/8</span>
+        <span>Санкт-Петербург</span>
       </p>
     </div>
     <div class="cooperation__map">
@@ -307,9 +309,9 @@
   <footer class="footer">
     <div class="footer__wrapper">
       <div class="footer__logo">
-        <a class="footer__logo-link" href="/">
+        <a href="/">
           <picture>
-            <img src="images/logo-text.svg" width="101" height="18" alt="Логотип Cat Energy.">
+            <img src="images/logo-text.svg" width="128" height="24" alt="Логотип Cat Energy.">
           </picture>
         </a>
       </div>
@@ -328,9 +330,11 @@
 
       <div class="footer__academy">
         <a class="footer__academy-text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <span class="footer__academy-icon"></span>
       </div>
     </div>
   </footer>
+  </main>
 </body>
 
 </html>

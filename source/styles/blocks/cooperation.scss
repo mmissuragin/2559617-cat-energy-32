@@ -1,35 +1,29 @@
+.cooperation {
+  width: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.cooperation__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 112px;
+}
 
 .cooperation__title {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  src: url("../../fonts/oswald/oswaldregular.woff2") format("woff2");
-  font-display: swap;
-  font-size: 20px;
-  line-height: 26px;
-  color: #000000;
-}
-
-.cooperation__info-adress {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  src: url("../../fonts/lato/Lato-Regular.woff2") format("woff2");
-  font-display: swap;
+  @include oswald-black;
   font-size: 16px;
   line-height: 20px;
-  color: #444444;
-  text-align: right;
+  width: 140px;
+  height: auto;
 }
 
-.cooperation__info-city {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  src: url("../../fonts/lato/Lato-Regular.woff2") format("woff2");
-  font-display: swap;
-  font-size: 16px;
+.cooperation__adress {
+  @include lato-dark-grey;
+  font-size: 14px;
   line-height: 20px;
-  color: #444444;
-  text-align: right;
+  text-align: left;
+  width: 140px;
+  height: auto;
 }

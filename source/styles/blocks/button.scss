@@ -1,0 +1,26 @@
+.button {
+  @include oswald-white;
+  background-color: $green;
+  margin: 0 auto;
+  height: 40;
+  text-align: center;
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button--more {
+  @include oswald-black;
+  color: $grey;
+  background-color: $basik-grey;
+  margin: 0 auto;
+  height: 40;
+  text-align: center;
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

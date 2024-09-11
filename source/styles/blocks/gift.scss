@@ -1,0 +1,58 @@
+.gift {
+  background-image: url("../../images/catalog-backgroundCat-mobile@2x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 290px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.gift_wrapper {
+  padding-top: 59px;
+  display: block;
+  align-items: center;
+}
+
+.gift-text {
+  @include lato-dark-grey;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+
+  height: 60px;
+  width: 100%;
+}
+
+
+.gift-text::before {
+  content: "";
+  background-image: url("../../icons/icon_gift.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 78px;
+  height: 80px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 48px;
+}
+
+
+@media (min-width: $tablet) {
+  .gift-text::before {
+    width: 80px;
+    height: 82px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .gift-text::before {
+    width: 80px;
+    height: 83px;
+  }
+}
+
+.additional-products__gift {
+  background-color: $green;
+}

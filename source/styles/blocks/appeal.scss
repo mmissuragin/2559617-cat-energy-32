@@ -1,43 +1,75 @@
 .appeal {
-  /* empty */
+  background-color: $green;
+  height: 480px;
+}
+
+@media (min-width: $tablet) {
+  .appeal {
+    height: auto;
+  }
 }
 
 .appeal__title {
-
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  src: url("../../fonts/oswald/oswaldregular.woff2") format("woff2");
-  font-display: swap;
+  @include oswald-white;
   font-size: 36px;
   line-height: 36px;
-  color: 000000;
-
   text-align: center;
+}
+
+@media (min-width: $tablet) {
+  .appeal__title {
+    @include oswald-black;
+    font-size: 60px;
+    line-height: 60px;
+
+
+    height: 120px;
+    width: auto;
+    text-align: left;
+
+    padding-left: 120px;
+    padding-top: 40px;
+  }
 }
 
 .appeal__description {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  src: url("../../fonts/oswald/oswaldregular.woff2") format("woff2");
-  font-display: swap;
-  font-size: 20px;
-  line-height: 20px;
-  color: #000000;
+  @include oswald-white;
+  font-size: 14px;
+  line-height: 14px;
   text-align: center;
 }
 
+@media (min-width: $tablet) {
+  .appeal__description {
+    @include oswald-black;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+
+    padding-left: 120px;
+  }
+}
+
+.appeal_picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .appeal__button {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  src: url("../../fonts/oswald/oswaldregular.woff2") format("woff2");
-  font-display: swap;
-  font-size: 20px;
-  line-height: 26px;
-  color: #ffffff;
+  background-color: $green;
+  margin: 0 auto;
+  height: 40;
   text-align: center;
-  background-color: #68b738;
   text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.appeal__button-text {
+  @include oswald-white;
+  font-size: 16px;
+  line-height: 20px;
 }

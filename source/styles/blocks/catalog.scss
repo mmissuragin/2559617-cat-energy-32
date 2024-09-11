@@ -1,78 +1,77 @@
+.catalog {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .catalog__title {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  src: url("../../fonts/oswald/oswaldregular.woff2") format("woff2");
-  font-display: swap;
-  font-size: 60px;
-  line-height: 60px;
-  color: #000000;
+  @include oswald-black;
+  font-size: 36px;
+  line-height: 36px;
+  padding-bottom: 41px;
+  border-bottom: $border-bottom;
+
+  display: flex;
+  align-items: center;
+}
+
+.catalog__list {
+  list-style: none;
+  padding: 0;
+}
+
+.catalog__item-title--more {
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.catalog__item-description {
+  @include lato-dark-grey;
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .catalog__item {
-  background-color: #f2f2f2;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: $border-bottom;
 }
 
+
 .catalog__item-title {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  src: url("../../fonts/oswald/oswaldregular.woff2") format("woff2");
-  font-display: swap;
-  font-size: 20px;
-  line-height: 24px;
-  color: #000000;
+  @include oswald-black;
+  font-size: 16px;
+  line-height: 20px;
   text-decoration: none;
 }
 
 .catalog__item-parameters {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  src: url("../../fonts/lato/Lato-Regular.woff2") format("woff2");
-  font-display: swap;
+  @include lato-dark-grey;
   font-size: 16px;
   line-height: 20px;
-  color: #444444;
 }
 
-.catalog__item-description {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  src: url("../../fonts/lato/Lato-Regular.woff2") format("woff2");
-  font-display: swap;
-  font-size: 16px;
-  line-height: 18px;
-  color: #444444;
-}
 
 .catalog__item-button {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  src: url("../../fonts/oswald/oswaldregular.woff2") format("woff2");
-  font-display: swap;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
+  @include oswald-white;
+  background-color: $green;
+  margin: 0 auto;
+  height: 40;
+  text-align: center;
   text-decoration: none;
-  background-color: #68b738;
-  text-transform: uppercase;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .catalog__item-button--more {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  src: url("../../fonts/oswald/oswaldregular.woff2") format("woff2");
-  font-display: swap;
+  @include oswald-black;
   font-size: 16px;
   line-height: 20px;
-  color: #000000;
   text-decoration: none;
-  background-color: #f2f2f2;
-  text-transform: uppercase;
+  background-color: $basik-grey;
 }
 
 .catalog__item-title--more::before {

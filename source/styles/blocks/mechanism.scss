@@ -15,6 +15,7 @@
   @include oswald-black;
   font-size: 36px;
   line-height: 40px;
+  padding-bottom: 40px;
 }
 
 @media (min-width: $tablet) {
@@ -31,6 +32,7 @@
   line-height: 18px;
   list-style: none;
   padding-left: 0;
+  padding-bottom: 29px;
 }
 
 @media (min-width: $tablet) {
@@ -49,78 +51,60 @@
   width: auto;
 }
 
-.mechanism__item-description {
-  margin-left: 20px;
-}
-
-.mechanism__item--leaf {
+.mechanism__item-1 {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
 
-.mechanism__item--leaf::before {
+.mechanism__item::before {
   content: "";
-  background-image: url("../../icons/icon-leaf.svg");
   background-color: $green;
   background-position: center;
   background-repeat: no-repeat;
   width: 60px;
   min-height: 60px;
-  background-size: 30px 32px;
+  background-size: 60px 60px;
   display: block;
+  flex-shrink: 0;
+  margin-right: 20px;
 }
 
-.mechanism__item--glass {
+.mechanism__item-1::before {
+  content: "";
+  background-image: url("../../icons/icon-leaf.svg");
+}
+
+.mechanism__item-2 {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
 
-.mechanism__item--glass::before {
+.mechanism__item-2::before {
   content: "";
   background-image: url("../../icons/icon-glass.svg");
   background-color: $green;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 30px 32px;
-  width: 60px;
-  height: 60px;
-  display: block;
 }
 
-.mechanism__item--dinnerware {
+.mechanism__item-3 {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
 
-.mechanism__item--dinnerware::before {
+.mechanism__item-3::before {
   content: "";
   background-image: url("../../icons/icon-dinnerware.svg");
-  background-color: $green;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 30px 32px;
-  width: 60px;
-  height: 60px;
-  display: block;
 }
 
-.mechanism__item--clock {
+.mechanism__item-4 {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
 
-.mechanism__item--clock::before {
+.mechanism__item-4::before {
   content: "";
   background-image: url("../../icons/icon-clock.svg");
-  background-color: $green;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 30px 32px;
-  width: 60px;
-  height: 60px;
-  display: block;
 }

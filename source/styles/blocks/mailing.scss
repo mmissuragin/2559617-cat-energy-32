@@ -1,6 +1,7 @@
 .mailing {
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 40px;
 }
 
 .mailing__title {
@@ -8,6 +9,8 @@
   font-size: 24px;
   line-height: 24px;
   text-decoration: none;
+  padding-top: 40px;
+  padding-bottom: 32px;
 }
 
 .mailing__text {
@@ -16,6 +19,7 @@
   line-height: 24px;
   text-decoration: none;
   text-align: center;
+  padding-bottom: 24px;
 }
 
 .mailing-button {

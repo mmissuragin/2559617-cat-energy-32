@@ -1,6 +1,7 @@
 .physique {
   margin-left: 20px;
   margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 @media (min-width: $tablet) {
@@ -14,6 +15,7 @@
   background-color: $basik-grey;
   padding-left: 20px;
   padding-right: 20px;
+  margin-bottom: 20px;
 }
 
 
@@ -53,7 +55,8 @@
   .physique__title {
     font-size: 36px;
     line-height: 36px;
-    padding-top: 24px;
+    padding-top: 77px;
+    padding-bottom: 24px;
   }
 }
 
@@ -63,33 +66,45 @@
   line-height: 18px;
   border-bottom: $border-bottom;
   padding-bottom: 23px;
+  padding-top: 22px;
 }
 
 @media (min-width: $tablet) {
   .physique__description {
     @include lato-dark-grey;
+    color: #000000;
     font-size: 16px;
     line-height: 24px;
     padding-bottom: 48px;
     border-bottom: none;
-
     height: 96px;
-    width: auto;
+    width: 322px;
   }
 }
+
 
 .physique__transition {
   @include oswald-black;
   font-size: 16px;
   line-height: 16px;
   text-decoration: none;
+  padding-top: 15px;
   padding-bottom: 18px;
 
   display: flex;
   align-items: center;
 }
 
-.physique__title--slim::before {
+@media (min-width: $tablet) {
+  .physique__transition {
+    @include oswald-black;
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 53px;
+  }
+}
+
+/* .physique__title--slim::before {
   content: "";
   background-image: url("../../icons/cat-sitting.svg");
   background-position: center;
@@ -105,11 +120,6 @@
   .physique__title--slim::before {
     width: 200px;
     height: 211px;
-
-    position: absolute;
-    right: 20px; /* Отступ от правой границы */
-    top: 50%;
-    transform: translateY(-50%);
   }
 }
 
@@ -128,7 +138,7 @@
   background-size: cover;
   width: 67px;
   height: 50px;
-  margin-right: 20px;
+  margin-right: 11px;
   display: block;
 }
 
@@ -157,3 +167,4 @@
   display: block;
   margin-left: 15px;
 }
+*/

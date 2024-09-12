@@ -8,14 +8,16 @@
   font-size: 36px;
   line-height: 40px;
   margin-left: 20px;
+  padding-top: 25px;
+  padding-bottom: 40px;
 }
 
 .example__intro {
   @include lato-dark-grey;
   font-size: 14px;
   line-height: 18px;
-  margin-left: 20px;
-  margin-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .example__item-quantity {
@@ -23,6 +25,7 @@
   font-size: 24px;
   line-height: 24px;
   text-align: center;
+  padding-bottom: 7px;
 }
 
 
@@ -30,6 +33,8 @@
   @include lato-dark-grey;
   font-size: 12px;
   line-height: 12px;
+  height: 24px;
+  width: 77px;
   text-align: center;
 }
 
@@ -44,9 +49,10 @@
   margin-left: 20px;
   margin-right: 20px;
 
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .example__item {
@@ -56,4 +62,5 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
 }

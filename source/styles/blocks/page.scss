@@ -1,3 +1,48 @@
-.page {
-  /* empty */
+dd {
+  display: block;
+  margin-inline-start: 0;
+  unicode-bidi: isolate;
+}
+
+.h1 {
+  display: block;
+  font-size: 0;
+  margin-block: 0 0;
+  margin-inline: 0 0;
+  font-weight: 700;
+  unicode-bidi: isolate;
+}
+
+h2 {
+  display: block;
+  font-size: 0;
+  margin-block: 0 0;
+  margin-inline: 0 0;
+  font-weight: 700;
+  unicode-bidi: isolate;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block: 0 0;
+  margin-inline: 0 0;
+  font-weight: 700;
+  unicode-bidi: isolate;
+}
+
+p {
+  display: block;
+  margin-block: 0 0;
+  margin-inline: 0 0;
+  unicode-bidi: isolate;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block: 0 0;
+  margin-inline: 0 0;
+  padding-inline-start: 40px;
+  unicode-bidi: isolate;
 }

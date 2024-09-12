@@ -9,9 +9,6 @@
   line-height: 36px;
   padding-bottom: 41px;
   border-bottom: $border-bottom;
-
-  display: flex;
-  align-items: center;
 }
 
 .catalog__list {
@@ -19,10 +16,15 @@
   padding: 0;
 }
 
+.catalog__item-link {
+  text-decoration: none;
+}
+
 .catalog__item-title--more {
   text-align: center;
   font-size: 16px;
   line-height: 20px;
+  padding-bottom: 8px;
 }
 
 .catalog__item-description {
@@ -30,6 +32,7 @@
   text-align: center;
   font-size: 12px;
   line-height: 16px;
+  padding-bottom: 21px;
 }
 
 .catalog__item {
@@ -39,17 +42,24 @@
 }
 
 
+.catalog__item--more {
+  padding-top: 25px;
+}
+
+
 .catalog__item-title {
   @include oswald-black;
   font-size: 16px;
   line-height: 20px;
-  text-decoration: none;
 }
 
 .catalog__item-parameters {
   @include lato-dark-grey;
   font-size: 16px;
   line-height: 20px;
+
+  display: flex;
+  justify-content: space-between;
 }
 
 

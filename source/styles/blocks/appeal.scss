@@ -1,22 +1,56 @@
-.appeal {
-  background-color: $green;
-  height: 480px;
+.appeal__title {
+  @include oswald-white;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+
+  padding-top: 27px;
+  padding-bottom: 25px;
+}
+
+
+.appeal__description {
+  @include oswald-white;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  padding-top: 0;
+  margin-bottom: 29px;
+}
+
+
+.appeal_picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.appeal__button {
+  text-decoration: none;
+}
+
+
+.appeal__button-text {
+  @include oswald-white;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@media (max-width: $mobile-last) {
+  .appeal {
+    background-image: linear-gradient(#68b738d9  302px, #ffffff 50%), linear-gradient(90deg, #444444 calc(50% - 160px), #00000000 30% 70%, #444444 calc(50% + 160px)), url("../../images/mobile/index-backgroundCat-mobile@2x.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 20px;
+  }
 }
 
 @media (min-width: $tablet) {
   .appeal {
     height: auto;
   }
-}
 
-.appeal__title {
-  @include oswald-white;
-  font-size: 36px;
-  line-height: 36px;
-  text-align: center;
-}
-
-@media (min-width: $tablet) {
   .appeal__title {
     @include oswald-black;
     font-size: 60px;
@@ -29,17 +63,9 @@
 
     padding-left: 120px;
     padding-top: 40px;
+    padding-bottom: 40px;
   }
-}
 
-.appeal__description {
-  @include oswald-white;
-  font-size: 14px;
-  line-height: 14px;
-  text-align: center;
-}
-
-@media (min-width: $tablet) {
   .appeal__description {
     @include oswald-black;
     font-size: 20px;
@@ -47,29 +73,50 @@
     text-align: left;
 
     padding-left: 120px;
+    padding-top: 0;
+    padding-bottom: 50px;
+    margin: 0;
+  }
+
+  .appeal_picture {
+    display: none;
+  }
+
+  .button {
+    width: 244px;
+    position: absolute;
+    left: 110px;
+    margin-left: 0;
+  }
+
+  .appeal__button {
+    background-image: url("../../images/tablet/hero-pack-tablet@1x.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 609px;
+    position: relative;
   }
 }
 
-.appeal_picture {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+@media (min-width: $desktop) {
+  .appeal__title {
+    padding-top: 55px;
+    width: 416px;
+    height: 120px;
+  }
 
-.appeal__button {
-  background-color: $green;
-  margin: 0 auto;
-  height: 40;
-  text-align: center;
-  text-decoration: none;
+  .appeal__description {
+    padding-bottom: 52px;
+  }
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .appeal_picture {
+    display: flex;
+    position: relative;
+    float: right;
+    top: 0;
+  }
 
-.appeal__button-text {
-  @include oswald-white;
-  font-size: 16px;
-  line-height: 20px;
+  .appeal__button {
+    background-image: none;
+  }
 }

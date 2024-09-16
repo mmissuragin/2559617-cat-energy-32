@@ -7,22 +7,39 @@
   @include oswald-black;
   font-size: 36px;
   line-height: 40px;
-  margin-left: 20px;
+  padding-top: 25px;
+  padding-bottom: 40px;
 }
 
 .example__intro {
   @include lato-dark-grey;
   font-size: 14px;
   line-height: 18px;
-  margin-left: 20px;
-  margin-right: 20px;
+  padding-bottom: 20px;
+}
+
+.example__list {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+}
+
+.example__item {
+  width: 124px;
+  height: 56px;
+  border: $border-bottom;
+  text-align: center;
+  place-items: center;
+  margin-bottom: 34px;
+  display: grid;
+  position: relative;
 }
 
 .example__item-quantity {
   @include oswald-black;
+  font-weight: 24px;
   font-size: 24px;
-  line-height: 24px;
-  text-align: center;
+  line-height: 1;
 }
 
 
@@ -30,30 +47,85 @@
   @include lato-dark-grey;
   font-size: 12px;
   line-height: 12px;
-  text-align: center;
+  background-color: #eaeaea;
+  width: 50%;
+  position: absolute;
+  bottom: -17px;
 }
 
-.example__expenses {
+.example__item-expenses {
   @include oswald-black;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
-}
-
-.example__list {
-  margin-left: 20px;
-  margin-right: 20px;
-
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.example__item {
-  border: $border-bottom;
-  width: 124px;
-  height: 70px;
-  display: flex;
+  flex-direction: row;
   justify-content: center;
-  flex-direction: column;
+  gap: 2px;
+  padding-bottom: 20px;
+}
+
+.example__image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media (min-width: $tablet) {
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 45px;
+    padding-bottom: 60px;
+  }
+
+  .example__intro {
+    @include lato-dark-grey;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 55px;
+  }
+
+  .example__item-quantity {
+    font-size: 30px;
+    line-height: 37px;
+    padding-bottom: 11px;
+  }
+
+
+  .example__item-description {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+
+  .example__item-expenses {
+    font-size: 20px;
+    line-height: 20px;
+    display: flex;
+    align-items: right;
+    flex-direction: column;
+    text-align: right;
+    width: 174px;
+    min-height: 49px;
+    gap: 9px;
+  }
+
+  .info_wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10%;
+    display: ruby;
+  }
+
+  .example__item {
+    width: 162px;
+    height: 77px;
+    margin-right: 43px;
+  }
 }

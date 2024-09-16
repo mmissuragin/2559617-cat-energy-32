@@ -1,15 +1,14 @@
 .gift {
-  background-image: url("../../images/catalog-backgroundCat-mobile@2x.png");
+  background-image: url("../../images/mobile/catalog-backgroundCat-mobile@2x.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 290px;
+
   margin-left: 20px;
   margin-right: 20px;
-}
 
-.gift_wrapper {
-  padding-top: 59px;
-  display: block;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -19,11 +18,10 @@
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-
   height: 60px;
-  width: 100%;
+  width: 161px;
+  margin-top: 48px;
 }
-
 
 .gift-text::before {
   content: "";
@@ -38,21 +36,30 @@
   margin-bottom: 48px;
 }
 
-
 @media (min-width: $tablet) {
-  .gift-text::before {
-    width: 80px;
-    height: 82px;
+  .gift {
+    background-image: url("../../images/tablet/catalog-backgroundCat-tablet@2x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    margin-left: 30px;
+    margin-right: 30px;
   }
-}
 
-@media (min-width: $desktop) {
+  .gift-text {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+    display: block;
+    width: 161px;
+  }
+
   .gift-text::before {
+    content: "";
     width: 80px;
     height: 83px;
+    padding: 0;
+    margin: 0;
   }
-}
-
-.additional-products__gift {
-  background-color: $green;
 }

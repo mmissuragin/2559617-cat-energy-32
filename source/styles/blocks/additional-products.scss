@@ -1,6 +1,5 @@
 .additional-products {
-  margin-left: 20px;
-  margin-right: 20px;
+  padding-bottom: 35px;
 }
 
 .additional-products__title {
@@ -8,6 +7,7 @@
   font-size: 24px;
   line-height: 24px;
   text-decoration: none;
+  padding-top: 25px;
   padding-bottom: 36px;
   border-bottom: $border-bottom;
 }
@@ -22,11 +22,17 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+  padding-top: 13px;
+  padding-bottom: 13px;
 }
 
 .additional-products__item {
   border-bottom: $border-bottom;
   padding-bottom: 20px;
+}
+
+.additional-products__item-quantity {
+  padding-bottom: 15px;
 }
 
 .additional-products__info {
@@ -43,4 +49,52 @@
   line-height: 20px;
   text-decoration: none;
   background-color: $green;
+}
+
+@media (min-width: $tablet) {
+  .additional-products {
+    padding-bottom: 70px;
+  }
+
+  .additional-products__title {
+    @include oswald-black;
+    font-size: 32px;
+    line-height: 32px;
+    text-decoration: none;
+    padding-bottom: 80px;
+    border-bottom: none;
+  }
+
+  .additional-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 25px;
+  }
+
+  .additional-products__item {
+    border: $border-bottom;
+    padding: 21px 38px 28px;
+  }
+
+  .additional-products__item-title {
+    @include oswald-black;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 50%;
+  }
+
+  .additional-products__info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .additional-products__item-quantity {
+    padding-bottom: 0;
+    padding-right: 49px;
+  }
 }

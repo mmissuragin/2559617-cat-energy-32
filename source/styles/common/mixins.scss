@@ -12,8 +12,6 @@
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-style: normal;
-  src: url("../../fonts/oswald/oswaldregular.woff2") format("woff2");
-  font-display: swap;
   color: #000000;
 }
 
@@ -22,16 +20,12 @@
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-style: normal;
-  src: url("../../fonts/oswald/oswaldregular.woff2") format("woff2");
-  font-display: swap;
 }
 
 @mixin lato-black {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: normal;
-  src: url("../../fonts/lato/Lato-Regular.woff2") format("woff2");
-  font-display: swap;
   color: #000000;
 }
 
@@ -39,7 +33,5 @@
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: normal;
-  src: url("../../fonts/lato/Lato-Regular.woff2") format("woff2");
-  font-display: swap;
   color: $grey;
 }

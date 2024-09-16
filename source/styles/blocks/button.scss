@@ -11,16 +11,87 @@
   align-items: center;
 }
 
-.button--more {
+.button-more {
   @include oswald-black;
   color: $grey;
   background-color: $basik-grey;
   margin: 0 auto;
   height: 40;
+  width: 100%;
   text-align: center;
   text-decoration: none;
 
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.button--mailing {
+  @include oswald-white;
+  background-color: $green;
+  margin: 0 auto;
+  height: 56;
+  width: 280px;
+  text-align: center;
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: $tablet) {
+  .button {
+    @include oswald-white;
+    text-align: center;
+    background-color: $green;
+    align-items: center;
+    width: 250px;
+    height: 40px;
+    margin-top: 32px;
+    text-decoration: none;
+    display: flex;
+    position: static;
+    justify-content: center;
+  }
+
+  .button-more {
+    width: 250px;
+  }
+
+  .button--additional {
+    width: 100%;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .button-appeal {
+    width: 244px;
+    position: absolute;
+    padding: 0;
+    margin-left: 10px;
+    margin-top: 0;
+  }
+
+  .button--mailing {
+    margin: 0;
+    height: 56px;
+    width: 256px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .button {
+    width: 169px;
+  }
+
+  .button--more {
+    width: 169px;
+  }
+
+  .button-appeal {
+    width: 244px;
+  }
 }

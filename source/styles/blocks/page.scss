@@ -1,10 +1,12 @@
+
+
 dd {
   display: block;
   margin-inline-start: 0;
   unicode-bidi: isolate;
 }
 
-.h1 {
+h1 {
   display: block;
   font-size: 0;
   margin-block: 0 0;
@@ -45,4 +47,24 @@ ul {
   margin-inline: 0 0;
   padding-inline-start: 40px;
   unicode-bidi: isolate;
+}
+
+ol {
+  display: block;
+  list-style-type: decimal;
+  margin-block: 0 0;
+  margin-inline: 0 0;
+  padding-inline-start: 40px;
+  unicode-bidi: isolate;
+}
+
+dl {
+  display: block;
+  margin-block: 0 0;
+  margin-inline: 0 0;
+  unicode-bidi: isolate;
+}
+
+.input {
+  border: none;
 }

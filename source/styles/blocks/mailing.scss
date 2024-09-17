@@ -78,3 +78,25 @@
     box-sizing: border-box;
   }
 }
+
+@media (min-width: $desktop) {
+  .mailing {
+    padding-bottom: 104px;
+  }
+
+  .mailing__title {
+    font-size: 40px;
+    line-height: 40px;
+    padding-top: 96px;
+    padding-bottom: 72px;
+  }
+
+  .mailing__container {
+    width: 752px;
+  }
+
+  .mailing__form-email {
+    width: 496px;
+    padding-left: 13;
+  }
+}

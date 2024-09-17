@@ -30,8 +30,7 @@
   width: 78px;
   height: 80px;
   display: block;
-  margin: 0 auto;
-  margin-bottom: 48px;
+  margin: 0 auto 48px;
 }
 
 @media (min-width: $tablet) {
@@ -68,5 +67,47 @@
     height: 83px;
     padding: 0;
     margin: 0;
+  }
+}
+
+@media (min-width: $desktop) {
+  .gift {
+    background-image: url("../../images/desktop/catalog-backgroundCat-desktop@2x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 288px;
+    width: 245px;
+    margin-top: 0;
+    margin-left: 80px;
+
+    display: block;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gift-text {
+    @include lato-dark-grey;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    height: 60px;
+    width: 161px;
+    margin-top: 48px;
+    margin-right: 0;
+    margin-left: 42px;
+    display: block;
+  }
+
+  .gift-text::before {
+    content: "";
+    background-image: url("../../icons/icon_gift.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 78px;
+    height: 80px;
+    display: block;
+    margin: 0 auto 48px;
   }
 }

@@ -90,3 +90,43 @@
     padding-right: 49px;
   }
 }
+
+@media (min-width: $desktop) {
+  .aboba {
+    display: flex;
+  }
+
+  .additional-wrapper {
+    padding: 0;
+  }
+
+  .additional-products__list {
+    min-width: 896px;
+    min-height: 288px;
+  }
+
+  .additional-products__item {
+    min-width: 896px;
+    display: flex;
+    padding: 15px 0;
+    border-left: none;
+    border-right: none;
+  }
+
+  .additional-products__item-title {
+    min-width: 161px;
+    padding-right: 164px;
+  }
+
+  .additional-products__item-quantity {
+    padding-right: 112px;
+    min-width: 131px;
+    display: flex;
+    place-items: center;
+  }
+
+  .additional-products__item-price {
+    min-width: 42px;
+    padding-right: 40px;
+  }
+}

@@ -11,7 +11,7 @@
   align-items: center;
 }
 
-.button-more {
+.button--more {
   @include oswald-black;
   color: $grey;
   background-color: $basik-grey;
@@ -26,12 +26,27 @@
   align-items: center;
 }
 
-.button--mailing {
+.button--appeal {
   @include oswald-white;
   background-color: $green;
   margin: 0 auto;
+  height: 40;
+  text-align: center;
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button--mailing {
+  @include oswald-white;
+  font-size: 20px;
+  line-height: 26px;
+  background-color: $green;
+  margin: 0 auto;
   height: 56;
-  width: 280px;
+  width: 100%;
   text-align: center;
   text-decoration: none;
 
@@ -55,8 +70,11 @@
     justify-content: center;
   }
 
-  .button-more {
+  .button--more {
     width: 250px;
+    color: #000000;
+    margin: 0;
+    background-color: $basik-grey;
   }
 
   .button--additional {
@@ -65,12 +83,16 @@
     margin-top: 0;
   }
 
-  .button-appeal {
+  .button--appeal {
+    margin: 0;
     width: 244px;
+    height: 54px;
+    margin-left: 0;
+    font-size: 20px;
+    line-height: 26px;
     position: absolute;
-    padding: 0;
-    margin-left: 10px;
-    margin-top: 0;
+    left: 120px;
+    top: 377px;
   }
 
   .button--mailing {
@@ -91,7 +113,15 @@
     width: 169px;
   }
 
-  .button-appeal {
+  .button--appeal {
+    margin: 0;
     width: 244px;
+    height: 54px;
+    margin-left: 0;
+    font-size: 20px;
+    line-height: 26px;
+    position: relative;
+    left: 90px;
+    top: -500px;
   }
 }

@@ -2,10 +2,6 @@
   background-color: $basik-grey;
 }
 
-.footer__wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
-}
 
 .footer__logo {
   border-bottom: $border-bottom;
@@ -97,14 +93,15 @@
   .footer__wrapper {
     display: flex;
     align-items: center;
-    padding-left: 30px;
-    padding-right: 30px;
-    height: 177px;
+    justify-content: space-between;
+    height: 37px;
+    padding: 55px 0;
   }
 
   .footer__logo {
-    margin-right: auto;
     border: none;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .footer__social-list {
@@ -112,21 +109,26 @@
     list-style: none;
     padding: 0;
     border: none;
-    justify-content: center;
-    width: auto;
+    justify-content: space-between;
+    width: 132px;
   }
 
   .footer__social-item {
-    margin: 0 24px; /* Отступ между иконками */
+    margin: 0;
   }
 
   .footer__academy {
     display: flex;
     align-items: center;
     border: none;
+    width: 168px;
+    padding: 0;
+    margin: 0;
   }
+}
 
-  .footer__academy-text {
-    margin-right: 23px;
+@media (min-width: $desktop) {
+  .footer__wrapper {
+    padding: 74px 0;
   }
 }

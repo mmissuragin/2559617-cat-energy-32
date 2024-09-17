@@ -15,41 +15,43 @@
 
 <body class="catalog-body">
   <header class="main-header">
-    <div class="main-header__wrapper">
-      <a class="main-header__logo" href="/">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
-          <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
-          <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
-        </picture>
-        <picture>
-          <img src="images/logo-text.svg" width="101" height="18" alt="Логотип Cat Energy.">
-        </picture>
-      </a>
+    <div class="container">
+      <div class="main-header__wrapper">
+        <a class="main-header__logo" href="/">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
+            <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+            <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+          </picture>
+          <picture>
+            <img src="images/logo-text.svg" width="101" height="18" alt="Логотип Cat Energy.">
+          </picture>
+        </a>
 
-      <nav class="main-nav main-nav--closed">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть главное меню</span></button>
-        <div class="main-nav__menu">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="/">ГЛАВНАЯ</a>
-            </li>
-            <li class="main-nav__item main-nav__item--active">
-              <a href="catalog.html">КАТАЛОГ ПРОДУКЦИИ</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="/">ПОДБОР ПРОГРАММЫ</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть главное меню</span></button>
+          <div class="main-nav__menu">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="/">ГЛАВНАЯ</a>
+              </li>
+              <li class="main-nav__item main-nav__item--active">
+                <a href="catalog.html">КАТАЛОГ ПРОДУКЦИИ</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="/">ПОДБОР ПРОГРАММЫ</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
   </header>
 
   <section class="catalog">
-    <div class="container container--catalog">
+    <div class="container">
       <h1 class="catalog__title">Каталог продукции</h1>
-      <div class="container__cards">
+      <div class="container container--cards">
         <div class="card">
           <div class="card__info">
             <div class="card__top">
@@ -274,8 +276,8 @@
           <a class="button" href="#">ЗАКАЗАТЬ</a>
         </div>
 
-        <div class=" card card--more">
-          <a class=" card__title card__title--more" href="#">ПОКАЗАТЬ ЕЩЕ 100500 ТОВАРОВ</a>
+        <div class="card card--more">
+          <a class="card__title card__title--more" href="#">ПОКАЗАТЬ ЕЩЕ 100500 ТОВАРОВ</a>
           <p class="card__description card__description--more">На самом деле вкусов гораздо больше!</p>
           <a class="button button--more" href="#">ПОКАЗАТЬ ВСЕ</a>
         </div>
@@ -284,56 +286,59 @@
   </section>
 
   <section class="additional-products">
-    <div class="container">
+    <div class="container container--additional-products">
       <h2 class="additional-products__title">Дополнительные товары</h2>
-      <ul class="additional-products__list">
-        <li class="additional-products__item">
-          <div class="additional-wrapper">
-            <h3 class="additional-products__item-title">Сахарозаменитель</h3>
-            <p class="additional-products__info">
-              <span class="additional-products__item-quantity">1 упаковка (100 г)</span>
-              <span class="additional-products__item-price">200 ₽</span>
-            </p>
+      <div class="aboba">
+        <ul class="additional-products__list">
+          <li class="additional-products__item">
+            <div class="additional-wrapper">
+              <h3 class="additional-products__item-title">Сахарозаменитель</h3>
+              <p class="additional-products__info">
+                <span class="additional-products__item-quantity">1 упаковка (100 г)</span>
+                <span class="additional-products__item-price">200 ₽</span>
+              </p>
+            </div>
+            <a class="button button--additional" href="#">ЗАКАЗАТЬ</a>
+          </li>
+          <li class="additional-products__item">
+            <div class="additional-wrapper">
+              <h3 class="additional-products__item-title">Питьевая вода</h3>
+              <p class="additional-products__info">
+                <span class="additional-products__item-quantity">5 литров</span>
+                <span class="additional-products__item-price">50 ₽</span>
+              </p>
+            </div>
+            <a class="button button--additional" href="#">ЗАКАЗАТЬ</a>
+          </li>
+          <li class="additional-products__item">
+            <div class="additional-wrapper">
+              <h3 class="additional-products__item-title">Молоко</h3>
+              <p class="additional-products__info">
+                <span class="additional-products__item-quantity">1 литр</span>
+                <span class="additional-products__item-price">100 ₽</span>
+              </p>
+            </div>
+            <a class="button button--additional" href="#">ЗАКАЗАТЬ</a>
+          </li>
+          <li class="additional-products__item">
+            <div class="additional-wrapper">
+              <h3 class="additional-products__item-title">Витамины</h3>
+              <p class="additional-products__info">
+                <span class="additional-products__item-quantity">1 упаковка (30 г)</span>
+                <span class="additional-products__item-price">300 ₽</span>
+              </p>
+            </div>
+            <a class="button button--additional" href="#">ЗАКАЗАТЬ</a>
+          </li>
+        </ul>
+        <div class="gift">
+          <h2 class="visually-hidden">Подарок</h2>
+          <div class="gift-text">
+            <span>Закажите все и получите чехол для кота в подарок!</span>
           </div>
-          <a class="button button--additional" href="#">ЗАКАЗАТЬ</a>
-        </li>
-        <li class="additional-products__item">
-          <div class="additional-wrapper">
-            <h3 class="additional-products__item-title">Питьевая вода</h3>
-            <p class="additional-products__info">
-              <span class="additional-products__item-quantity">5 литров</span>
-              <span class="additional-products__item-price">50 ₽</span>
-            </p>
-          </div>
-          <a class="button button--additional" href="#">ЗАКАЗАТЬ</a>
-        </li>
-        <li class="additional-products__item">
-          <div class="additional-wrapper">
-            <h3 class="additional-products__item-title">Молоко</h3>
-            <p class="additional-products__info">
-              <span class="additional-products__item-quantity">1 литр</span>
-              <span class="additional-products__item-price">100 ₽</span>
-            </p>
-          </div>
-          <a class="button button--additional" href="#">ЗАКАЗАТЬ</a>
-        </li>
-        <li class="additional-products__item">
-          <div class="additional-wrapper">
-            <h3 class="additional-products__item-title">Витамины</h3>
-            <p class="additional-products__info">
-              <span class="additional-products__item-quantity">1 упаковка (30 г)</span>
-              <span class="additional-products__item-price">300 ₽</span>
-            </p>
-          </div>
-          <a class="button button--additional" href="#">ЗАКАЗАТЬ</a>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
-  </section>
-
-  <section class="gift">
-    <h2 class="visually-hidden">Подарок</h2>
-    <p class="gift-text">Закажите все и получите чехол для кота в подарок!</p>
   </section>
 
   <section class="mailing">
@@ -346,19 +351,19 @@
             <label class="visually-hidden" for="email">Введите ваш E-Mail:</label>
             <input class="mailing__form-email" type="email" id="email" placeholder="Введите ваш E-Mail" name="E-mail">
           </form>
-          <a class="button button--mailing" href="#">ПОДПИСАТЬСЯ</a>
+          <button class="button button--mailing" type="submit">ПОДПИСАТЬСЯ</button>
         </div>
       </div>
     </div>
   </section>
 
   <section class="cooperation">
-    <div class="cooperation__wrapper">
+    <div class="container container--cooperation">
       <h3 class="cooperation__title">ПРИГЛАШАЕМ К СОТРУДНИЧЕСТВУ ДИЛЕРОВ!</h3>
-      <p class="cooperation__adress">
-        <span>ул. Большая Конюшенная, д. 19/8</span>
-        <span>Санкт-Петербург</span>
-      </p>
+      <dl class="cooperation__adress">
+        <dt>ул. Большая Конюшенная, д. 19/8</dt>
+        <dd>Санкт-Петербург</dd>
+      </dl>
     </div>
     <div class="cooperation__map">
       <h2 class="visually-hidden">Карта</h2>
@@ -366,33 +371,38 @@
   </section>
 
   <footer class="footer">
-    <div class="footer__wrapper">
-      <div class="footer__logo">
-        <a href="/">
-          <picture>
-            <img src="images/logo-text.svg" width="128" height="24" alt="Логотип Cat Energy.">
-          </picture>
-        </a>
-      </div>
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__logo">
+          <a href="/">
+            <picture>
+              <img src="images/logo-text.svg" width="128" height="24" alt="Логотип Cat Energy.">
+            </picture>
+          </a>
+        </div>
 
-      <ul class="footer__social-list">
-        <li class="footer__social-item footer__social-item--vk">
-          <a class="footer__social-link" href="https://vk.com/"><span class="visually-hidden">ВК</span></a>
-        </li>
-        <li class="footer__social-item footer__social-item--youtube">
-          <a class="footer__social-link" href="/"><span class="visually-hidden">ЮТУБ</span></a>
-        </li>
-        <li class="footer__social-item footer__social-item--telegram">
-          <a class="footer__social-link" href="/"><span class="visually-hidden">ТГ</span></a>
-        </li>
-      </ul>
+        <ul class="footer__social-list">
+          <li class="footer__social-item footer__social-item--vk">
+            <a class="footer__social-link" href="https://vk.com/"><span class="visually-hidden">ВК</span></a>
+          </li>
+          <li class="footer__social-item footer__social-item--youtube">
+            <a class="footer__social-link" href="/"><span class="visually-hidden">ЮТУБ</span></a>
+          </li>
+          <li class="footer__social-item footer__social-item--telegram">
+            <a class="footer__social-link" href="/"><span class="visually-hidden">ТГ</span></a>
+          </li>
+        </ul>
 
-      <div class="footer__academy">
-        <a class="footer__academy-text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <span class="footer__academy-icon"></span>
+        <div class="footer__academy">
+          <a class="footer__academy-text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <span class="footer__academy-icon"></span>
+        </div>
       </div>
     </div>
   </footer>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 
 </html>

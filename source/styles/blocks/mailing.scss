@@ -20,19 +20,6 @@
   padding-bottom: 24px;
 }
 
-.mailing-button {
-  @include oswald-white;
-  background-color: $green;
-  margin: 0 auto;
-  height: 40;
-  text-align: center;
-  text-decoration: none;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .mailing__form {
   display: flex;
   justify-content: center;
@@ -41,15 +28,18 @@
 
 .mailing__form-email {
   @include oswald-black;
-  width: 280px;
+  width: 100%;
   color: $grey;
+  font-size: 20px;
+  line-height: 30px;
   margin: 0 auto;
   height: 56px;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
   margin-bottom: 16px;
   text-transform: uppercase;
   border: 1 solid $grey;
+  padding-left: 13px;
 }
 
 
@@ -81,11 +71,10 @@
     width: 376px;
     color: $grey;
     margin: 0 auto;
-    height: 55px;
-    text-align: center;
+    height: 56px;
+    text-align: left;
     text-decoration: none;
-    margin-bottom: 16px;
     text-transform: uppercase;
-    border: 1 solid $grey;
+    box-sizing: border-box;
   }
 }

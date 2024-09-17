@@ -15,34 +15,36 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header__wrapper">
-      <a class="main-header__logo" href="/">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
-          <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
-          <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
-        </picture>
-        <picture>
-          <img src="images/logo-text.svg" width="101" height="18" alt="Логотип Cat Energy.">
-        </picture>
-      </a>
+    <div class="container">
+      <div class="main-header__wrapper">
+        <a class="main-header__logo" href="/">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
+            <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+            <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+          </picture>
+          <picture>
+            <img src="images/logo-text.svg" width="101" height="18" alt="Логотип Cat Energy.">
+          </picture>
+        </a>
 
-      <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть главное меню</span></button>
-        <div class="main-nav__menu">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">
-              <a href="/">ГЛАВНАЯ</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="catalog.html">КАТАЛОГ ПРОДУКЦИИ</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="/">ПОДБОР ПРОГРАММЫ</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть главное меню</span></button>
+          <div class="main-nav__menu">
+            <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__item--active">
+                <a href="/">ГЛАВНАЯ</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="catalog.html">КАТАЛОГ ПРОДУКЦИИ</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="/">ПОДБОР ПРОГРАММЫ</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -58,9 +60,7 @@
           <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/tablet/hero-pack-tablet@1x.png 1x, images/tablet/hero-pack-tablet@2x.png 2x">
           <img class="appeal__image" src="images/mobile/hero-pack-mobile@1x.png" srcset="images/mobile/hero-pack-mobile@2x.png 2x" width="280" height="270" alt="Большая баночка корма">
         </picture>
-        <div class="appeal__button">
-          <a class="button button-appeal" href="/">ПОДОБРАТЬ ПРОГРАММУ</a>
-        </div>
+        <a class="button button--appeal" href="/">ПОДОБРАТЬ ПРОГРАММУ</a>
       </div>
     </section>
 
@@ -88,7 +88,7 @@
 
     <section class="mechanism">
       <h2 class="container mechanism__title">Как это работает</h2>
-      <div class="container container--mechanism">
+      <div class="container">
         <ol class="mechanism__list">
           <li class="mechanism__item mechanism__item-1">Функциональное питание содержит только полезные питательные вещества.</li>
           <li class="mechanism__item mechanism__item-2">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
@@ -99,7 +99,7 @@
     </section>
 
     <section class="example">
-      <div class="container container--example">
+      <div class="container">
         <h2 class="example__title">Живой пример</h2>
         <p class="example__intro">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
         <div class="info_wrapper">
@@ -134,7 +134,7 @@
     </section>
 
     <section class="cooperation">
-      <div class="cooperation__wrapper">
+      <div class="container container--cooperation">
         <h3 class="cooperation__title">ПРИГЛАШАЕМ К СОТРУДНИЧЕСТВУ ДИЛЕРОВ!</h3>
         <p class="cooperation__adress">
           <span>ул. Большая Конюшенная, д. 19/8</span>
@@ -147,30 +147,32 @@
     </section>
 
     <footer class="footer">
-      <div class="footer__wrapper">
-        <div class="footer__logo">
-          <a href="/">
-            <picture>
-              <img src="images/logo-text.svg" width="128" height="24" alt="Логотип Cat Energy.">
-            </picture>
-          </a>
-        </div>
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__logo">
+            <a href="/">
+              <picture>
+                <img src="images/logo-text.svg" width="128" height="24" alt="Логотип Cat Energy.">
+              </picture>
+            </a>
+          </div>
 
-        <ul class="footer__social-list">
-          <li class="footer__social-item footer__social-item--vk">
-            <a class="footer__social-link" href="https://vk.com/"><span class="visually-hidden">ВК</span></a>
-          </li>
-          <li class="footer__social-item footer__social-item--youtube">
-            <a class="footer__social-link" href="/"><span class="visually-hidden">ЮТУБ</span></a>
-          </li>
-          <li class="footer__social-item footer__social-item--telegram">
-            <a class="footer__social-link" href="/"><span class="visually-hidden">ТГ</span></a>
-          </li>
-        </ul>
+          <ul class="footer__social-list">
+            <li class="footer__social-item footer__social-item--vk">
+              <a class="footer__social-link" href="https://vk.com/"><span class="visually-hidden">ВК</span></a>
+            </li>
+            <li class="footer__social-item footer__social-item--youtube">
+              <a class="footer__social-link" href="/"><span class="visually-hidden">ЮТУБ</span></a>
+            </li>
+            <li class="footer__social-item footer__social-item--telegram">
+              <a class="footer__social-link" href="/"><span class="visually-hidden">ТГ</span></a>
+            </li>
+          </ul>
 
-        <div class="footer__academy">
-          <a class="footer__academy-text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <span class="footer__academy-icon"></span>
+          <div class="footer__academy">
+            <a class="footer__academy-text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <span class="footer__academy-icon"></span>
+          </div>
         </div>
       </div>
     </footer>

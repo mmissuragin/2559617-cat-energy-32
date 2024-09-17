@@ -68,3 +68,42 @@ dl {
 .input {
   border: none;
 }
+
+
+.button {
+  margin: 0;
+  padding-block: 0;
+  padding-inline: 0;
+  border-width: 0;
+  border-style: outset;
+  border-color: buttonborder;
+  border-image: initial;
+}
+
+
+input {
+  text-rendering: auto;
+  color: fieldtext;
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-indent: 0;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  appearance: auto;
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  background-color: field;
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+  padding-block: 0;
+  padding-inline: 0;
+}
+
+.catalog-body {
+  padding: 0;
+  margin: 0;
+}

@@ -14,24 +14,21 @@
 
 
 .card__top {
-  width: 50%;
+  width: 140px;
+  height: 107px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.card__bottom {
-  padding-right: 20px;
-  padding-bottom: 17px;
-}
 
 .card__info {
-  width: 280px;
   height: 107px;
   display: flex;
   align-items: center;
   margin: 0 auto;
-  justify-content: space-between;
+  justify-content: center;
+  padding-bottom: 17px;
 }
 
 .card__title {
@@ -51,7 +48,6 @@
   @include lato-dark-grey;
   font-size: 12px;
   line-height: 16px;
-  min-width: 140px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -64,11 +60,9 @@
 
 .card--more {
   display: block;
-  font-size: 16px;
-  line-height: 20px;
+  flex-direction: column;
   padding-top: 25px;
   padding-bottom: 25px;
-  border-top: $border-bottom;
 }
 
 .card__title--more {
@@ -77,10 +71,11 @@
   line-height: 20px;
   display: block;
   text-align: center;
-  padding-bottom: 8px;
   text-decoration: none;
+  width: auto;
+  margin-bottom: 25px;
+  padding-bottom: 8px;
 }
-
 
 .card__title--more::before {
   content: "";
@@ -89,8 +84,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 30px;
-  margin-bottom: 23px;
   display: block;
+  margin-bottom: 23px;
 }
 
 .card__description--more {
@@ -115,21 +110,20 @@
   }
 
   .card {
-    padding-top: 0;
+    padding-top: 10px;
     padding-bottom: 0;
     background-color: $basik-grey;
-    width: 324px;
-    min-height: 511px;
+    min-width: 324px;
+    height: 511px;
     border: none;
 
     background-image: linear-gradient(#ffffff 81px, #00000000 0);
   }
 
   .card__top {
-    width: 50%;
+    width: 200px;
+    height: 210px;
     flex: 0 0 210px;
-    display: flex;
-    align-items: center;
     margin: 0 auto;
   }
 
@@ -190,19 +184,14 @@
     padding-bottom: 8px;
   }
 
-  .container {
-    width: 100%;
-    max-width: 1120px;
-    padding: 0 15px;
-    margin: 0 auto;
-  }
-
   .card--more {
     border: 2px solid $basik-grey;
     background-color: #ffffff;
-    margin-top: 80px;
-    padding: 0;
+    background-image: linear-gradient(#ffffff 81px, #00000000 0);
+    height: 429px;
+    margin-top: 82px;
     min-width: 324px;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -212,6 +201,7 @@
     @include oswald-black;
     font-size: 20px;
     line-height: 24px;
+    padding-top: 0;
     padding-bottom: 23px;
     text-decoration: none;
     width: 134px;
@@ -237,15 +227,6 @@
     text-align: center;
     padding-bottom: 82px;
     width: 170px;
-  }
-
-  .container__cards {
-    display: grid;
-    grid-template-columns: repeat(3, 324px);
-    justify-content: center;
-    justify-items: center;
-    margin: 0 auto;
-    gap: 90px 90px;
   }
 }
 

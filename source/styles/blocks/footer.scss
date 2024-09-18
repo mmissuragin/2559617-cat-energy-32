@@ -12,6 +12,14 @@
   align-items: center;
 }
 
+.footer__logo:hover {
+  opacity: 60%;
+}
+
+.footer__logo:active {
+  opacity: 60%;
+}
+
 
 .footer__academy-text {
   @include lato-dark-grey;
@@ -33,6 +41,10 @@
 
 .footer__social-item {
   margin-right: 24px;
+}
+
+.footer__social-item:hover {
+  background-color: #68b738;
 }
 
 
@@ -87,6 +99,14 @@
   width: 27px;
   height: 34px;
   display: inline-block;
+}
+
+.footer__academy-icon:hover {
+  background-color: #68b738;
+}
+
+.footer__academy-icon:active {
+  opacity: 60%;
 }
 
 @media (min-width: $tablet) {

@@ -29,6 +29,14 @@
   }
 }
 
+.main-nav__item:hover {
+  opacity: 60%;
+}
+
+.main-nav__item:active {
+  opacity: 30%;
+}
+
 .main-nav__toggle {
   position: absolute;
   top: 8px;

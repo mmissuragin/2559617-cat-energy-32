@@ -11,6 +11,15 @@
   align-items: center;
 }
 
+.button:hover {
+  background-color: #5eaa2f;
+}
+
+.button:active {
+  background-color: #5eaa2f;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .button--more {
   @include oswald-black;
   color: $grey;
@@ -24,6 +33,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.button--more:hover {
+  background-color: #ebebeb;
+}
+
+.button--more:active {
+  background-color: #ebebeb;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button--appeal {

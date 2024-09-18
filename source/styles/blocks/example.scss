@@ -67,8 +67,7 @@
 
 .example__image {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -128,5 +127,22 @@
     width: 162px;
     height: 77px;
     margin-right: 43px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .info_wrapper {
+    display: block;
+  }
+
+  .example__item-expenses {
+    flex-direction: row;
+    padding: 0;
+    text-align: left;
+  }
+
+  .example__item-expenses p {
+    min-width: 174px;
+    text-align: left;
   }
 }

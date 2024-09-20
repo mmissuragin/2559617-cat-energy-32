@@ -12,8 +12,7 @@
   @include oswald-black;
   font-size: 36px;
   line-height: 40px;
-  padding-bottom: 40px;
-  padding-left: 20px;
+  padding-bottom: 20px;
 }
 
 .mechanism__list {
@@ -52,28 +51,39 @@
 
 
 @media (min-width: $tablet) {
+  .mechanism {
+    padding-bottom: 10px;
+  }
+
   .mechanism__title {
     font-size: 60px;
     line-height: 60px;
-    padding-bottom: 32px;
+    padding-bottom: 72px;
     padding-left: 30px;
   }
 
   .mechanism__list {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
     align-items: center;
     flex-wrap: wrap;
     counter-reset: ol 0;
+    grid-template-columns: repeat(auto-fill, 280px);
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 37px 103px;
   }
 
   .mechanism__item {
-    background-position: 0 40px;
+    font-size: 16px;
+    line-height: 24px;
+    background-position: 0 0;
     background-size: 80px 80px;
     width: 230px;
-    min-height: 217px;
-    margin-right: 75px;
-    padding: 150px 0 0;
+    height: 72px;
+    margin-right: 0;
+    margin-top: 0;
+    padding: 0;
+    padding-top: 110px;
+    padding-bottom: 98px;
     position: relative;
   }
 
@@ -86,15 +96,47 @@
     content: counter(ol);
     font-family: "Oswald", sans-serif;
     position: absolute;
-    top: 0;
-    left: 48%;
+    top: -40;
+    left: 50%;
     z-index: -1;
   }
 }
 
 @media (min-width: $desktop) {
+  .mechanism {
+    padding-bottom: 29px;
+  }
+
   .mechanism__title {
     padding-left: 110px;
+  }
+
+  .mechanism__list {
+    grid-gap: 0;
+  }
+
+  .mechanism__item {
+    margin: 0;
+    background-color: tomato;
+  }
+
+  .mechanism__item--1 {
+    margin-right: 194px;
+  }
+
+  .mechanism__item--2 {
+    width: 246px;
+    margin-right: 94px;
+  }
+
+  .mechanism__item--3 {
+    width: 248px;
+    margin-right: 77px;
+  }
+
+  .mechanism__item--4 {
+    width: 250px;
+    margin-right: 77px;
   }
 }
 

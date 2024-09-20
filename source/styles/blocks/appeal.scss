@@ -1,10 +1,12 @@
+.appeal {
+  padding-top: 27px;
+}
+
 .appeal__title {
   @include oswald-white;
   font-size: 36px;
   line-height: 36px;
   text-align: center;
-
-  padding-top: 27px;
   padding-bottom: 25px;
 }
 
@@ -14,8 +16,7 @@
   font-size: 14px;
   line-height: 14px;
   text-align: center;
-  padding-top: 0;
-  margin-bottom: 29px;
+  padding-bottom: 29px;
 }
 
 
@@ -27,29 +28,26 @@
 
 @media (max-width: $mobile-last) {
   .appeal {
-    background-image: linear-gradient(#68b738d9  302px, #ffffff 50%), linear-gradient(90deg, #444444 calc(50% - 160px), #00000000 30% 70%, #444444 calc(50% + 160px)), url("../../images/mobile/index-backgroundCat-mobile@2x.png");
+    background-image: linear-gradient(#68b738d9  302px, #ffffff 50%), linear-gradient(90deg, #444444 calc(50% - 160px), #00000000 30% 70%, #444444 calc(50% + 160px)), url("../../images/mobile/index-background-cat-mobile@2x.png");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: contain;
-    margin-bottom: 20px;
   }
 }
 
 @media (min-width: $tablet) {
   .appeal {
-    height: auto;
+    padding-top: 62px;
+    position: relative;
   }
 
   .appeal__title {
     @include oswald-black;
     font-size: 60px;
     line-height: 60px;
-
-    width: 416px;
     text-align: left;
-
     padding-left: 90px;
-    padding-top: 65px;
+    padding-right: 202px;
     padding-bottom: 40px;
   }
 
@@ -58,22 +56,35 @@
     font-size: 20px;
     line-height: 20px;
     text-align: left;
-
     padding-left: 90px;
-    padding-top: 0;
     padding-bottom: 21px;
     margin: 0;
   }
 }
 
 @media (min-width: $desktop) {
+  .appeal {
+    position: relative;
+    min-height: 580px;
+  }
+
   .appeal__title {
     padding-top: 110px;
+    padding-left: 80px;
     width: 416px;
-    height: 120px;
+    min-height: 120px;
   }
 
   .appeal__description {
     padding-bottom: 52px;
+    padding-left: 80px;
+    width: 283px;
+    min-height: 20px;
+  }
+
+  .appeal_picture {
+    position: absolute;
+    top: 30px;
+    left: 557px;
   }
 }

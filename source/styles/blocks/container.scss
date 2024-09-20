@@ -19,11 +19,14 @@
   }
 
   .container--cards {
-    padding: 0;
+    padding-left: 30px;
+    padding-right: 30px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 324px);
     justify-content: space-between;
-    gap: 60px 60px;
+    justify-items: center;
+    grid-template-rows: auto 1fr auto;
+    grid-row-gap: 60px;
   }
 
   .container--cooperation {
@@ -41,9 +44,7 @@
   }
 
   .container--physique {
-    align-items: center;
     display: flex;
-    justify-content: center;
   }
 
   .container--cards {
@@ -52,7 +53,8 @@
     grid-template-columns: repeat(4, 245px);
     justify-content: space-between;
     justify-items: center;
-    gap: 90px 90px;
+    grid-template-rows: auto 1fr auto;
+    grid-row-gap: 53px;
   }
 
   .container--cooperation {

@@ -1,4 +1,5 @@
 .physique {
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 
@@ -9,17 +10,20 @@
 
   display: flex;
   align-items: center;
-
-  padding-top: 21px;
 }
 
 .physique__description {
   @include lato-dark-grey;
   font-size: 14px;
   line-height: 18px;
-  border-bottom: $border-bottom;
   padding-bottom: 23px;
   padding-top: 22px;
+  box-sizing: border-box;
+}
+
+.physique__description--slim {
+  padding-left: 20px;
+  padding-right: 33px;
 }
 
 .physique__transition {
@@ -29,7 +33,10 @@
   text-decoration: none;
   padding-top: 15px;
   padding-bottom: 18px;
-
+  margin-left: 20px;
+  margin-right: 20px;
+  min-height: 24px;
+  border-top: $border;
   display: flex;
   align-items: center;
 }
@@ -45,22 +52,21 @@
   height: 12px;
   display: block;
   margin-left: 15px;
-  transition: transform 0.7s linear;
+  transition: transform 0.2s linear;
   transform-origin: left center;
 }
 
-.physique__transition::after:hover {
+.physique__transition:hover::after {
   transform: scaleX(1.35);
 }
 
 .physique__option {
   background-color: $basik-grey;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .physique__option--slim {
   margin-bottom: 20px;
+  padding-top: 24px;
 }
 
 .physique__title::before {
@@ -75,8 +81,26 @@
 .physique__title--slim::before {
   background-image: url("../../icons/cat-sitting.svg");
   width: 50px;
-  height: 53px;
+  height: 50px;
   margin-right: 20px;
+}
+
+.physique__option--fat {
+  padding-top: 24px;
+}
+
+.physique__description--fat {
+  padding-left: 20px;
+  padding-right: 33px;
+  min-height: 90px;
+}
+
+.physique__title--slim {
+  padding-left: 20px;
+}
+
+.physique__title--fat {
+  padding-left: 13px;
 }
 
 .physique__title--fat::before {
@@ -88,60 +112,78 @@
 
 @media (min-width: $tablet) {
   .physique {
+    padding-top: 0;
     padding-bottom: 45px;
   }
 
   .physique__title {
     font-size: 36px;
     line-height: 36px;
-    padding-top: 77px;
-    padding-bottom: 24px;
-
-    position: relative;
   }
 
   .physique__description {
-    @include lato-dark-grey;
-    color: #000000;
     font-size: 16px;
     line-height: 24px;
-    padding-bottom: 48px;
-    border-bottom: none;
-    height: 96px;
-    width: 322px;
   }
 
-  .physique__transition {
-    @include oswald-black;
-    font-size: 20px;
-    line-height: 30px;
-    padding-bottom: 53px;
+  .physique__option--slim {
+    padding-top: 77px;
+    position: relative;
+    margin-bottom: 30px;
   }
 
-  .physique_option--slim {
-    margin-left: 53px;
-    margin-right: 50px;
-  }
-
-  .physique_option--fat {
-    margin-left: 53px;
-    margin-right: 50px;
+  .physique__title--slim {
+    padding-left: 53px;
   }
 
   .physique__title--slim::before {
     width: 200px;
     height: 211px;
+    margin: 0;
     position: absolute;
-    right: 93px;
-    top: 81px;
+    right: 63px;
+    top: 81;
+  }
+
+  .physique__description--slim {
+    padding: 24px 316px 48px 52px;
+  }
+
+  .physique__transition {
+    font-size: 20px;
+    line-height: 30px;
+    border: none;
+    margin: 0;
+    padding-left: 52px;
+    padding-bottom: 53px;
+    padding-top: 0;
+    min-height: 38px;
+  }
+
+  .physique__transition::after {
+    margin-left: 25px;
+  }
+
+  .physique__option--fat {
+    padding-top: 77px;
+    position: relative;
+  }
+
+  .physique__title--fat {
+    padding-left: 53px;
   }
 
   .physique__title--fat::before {
     width: 268px;
     height: 200px;
+    margin: 0;
     position: absolute;
-    right: 59px;
-    top: 91px;
+    right: 29px;
+    top: 91;
+  }
+
+  .physique__description--fat {
+    padding: 24px 316px 48px 52px;
   }
 }
 
@@ -149,27 +191,67 @@
   .physique {
     display: flex;
     justify-content: center;
+    padding-top: 82px;
     padding-bottom: 71px;
   }
 
   .physique__option {
-    width: 518px;
-    height: 374;
-    padding-left: 52px;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
   }
 
-  .physique__title {
-    padding-top: 47px;
+  .physique__option--slim {
+    padding-top: 41px;
+    margin-right: 80px;
+    width: 570px;
+    height: auto;
+  }
+
+  .physique__title--slim {
+    padding-left: 52px;
+    padding-top: 0;
     padding-bottom: 39px;
+  }
+
+  .physique__title--slim::before {
+    width: 100px;
+    height: 106px;
+    margin-right: 62px;
+  }
+
+  .physique__description--slim {
+    padding-right: 61px;
+    padding-top: 23px;
+  }
+
+  .physique__option--fat {
+    margin: 0;
+    width: 570px;
+    height: auto;
+    padding-top: 47px;
+  }
+
+  .physique__title--fat {
+    padding-left: 33px;
+    padding-bottom: 39px;
+  }
+
+  .physique__title--fat::before {
+    background-image: url("../../icons/cat-going.svg");
+    width: 134px;
+    height: 100px;
+    margin-right: 47px;
   }
 
   .physique__description {
     padding-top: 0;
     padding-bottom: 23px;
-    width: 457px;
-    height: auto;
+  }
+
+  .physique__description--fat {
+    min-width: 451px;
+    padding-left: 52px;
+    padding-right: 67px;
   }
 
   .physique__title::before {
@@ -181,25 +263,9 @@
     display: block;
   }
 
-  .physique__option--slim {
-    margin-right: 80px;
-  }
-
-  .physique__title--slim::before {
-    width: 100px;
-    height: 106px;
-    margin-right: 20px;
-  }
-
-  .physique__title--fat::before {
-    background-image: url("../../icons/cat-going.svg");
-    width: 134px;
-    height: 100px;
-    margin-right: 11px;
-  }
-
   .physique__transition {
     padding-top: 0;
     padding-bottom: 55px;
+    padding-left: 52px;
   }
 }

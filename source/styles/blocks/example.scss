@@ -66,19 +66,17 @@
   padding-bottom: 20px;
 }
 
-.example__image {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+.example__image-wrapper {
+  position: relative;
   width: 280px;
   height: 256px;
-  background-color: tomato;
 }
 
 @media (min-width: $tablet) {
   .example {
-    border-top: $border;
     padding-top: 0;
+    background-image: linear-gradient(#ffffff 574px, #00000000 0);
+    padding-bottom: 101px;
   }
 
   .example__title {
@@ -103,7 +101,7 @@
   .example__item-quantity {
     font-size: 30px;
     line-height: 37px;
-    padding-bottom: 11px;
+    padding-bottom: 5px;
   }
 
 
@@ -111,7 +109,7 @@
     font-size: 14px;
     line-height: 14px;
     min-width: 125px;
-    bottom: -4px;
+    bottom: -5px;
     background-color: #ffffff;
   }
 
@@ -122,29 +120,22 @@
     display: flex;
     align-items: right;
     flex-direction: column;
-    padding-top: 10px;
+    justify-content: flex-start;
+    padding-top: 12px;
     text-align: right;
     gap: 9px;
   }
 
-  .info_wrapper {
+  .example__list-wrapper {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 99px;
   }
 
   .example__item {
     width: 162px;
     height: 72px;
-    margin-right: 43px;
-  }
-
-  .example__image {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 560px;
-    height: 512px;
-    background-color: tomato;
+    margin-right: 38px;
   }
 }
 
@@ -153,22 +144,25 @@
   .example {
     position: relative;
     padding-bottom: 75px;
+    background-image: linear-gradient(#ffffff 136px, $basik-grey 0);
   }
 
   .example__title {
-    padding-bottom: 146px;
+    padding-bottom: 76px;
   }
 
   .example__intro {
+    padding-top: 70px;
     padding-bottom: 69px;
     width: 436px;
     height: 96px;
   }
 
-  .info_wrapper {
+  .example__list-wrapper {
     display: flex;
     flex-direction: column;
     align-items: left;
+    padding-bottom: 0;
   }
 
   .example__list {
@@ -179,13 +173,20 @@
 
   .example__item {
     margin-bottom: 0;
-    margin-right: 42px;
+    margin-right: 35px;
+    border-radius: 5px;
+  }
+
+  .example__item-quantity {
+    padding-bottom: 7px;
+    min-width: 37px;
   }
 
   .example__item-description {
     min-width: 125px;
     min-height: 14px;
-    bottom: 0;
+    bottom: -4px;
+    background-color: $basik-grey;
   }
 
   .example__item-expenses {
@@ -203,17 +204,5 @@
     min-width: 174px;
     text-align: left;
     height: auto;
-  }
-
-  .example__image {
-    width: 560px;
-    height: 512px;
-    background-image: url("../../images/cat-slider-tablet@2x.png");
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    right: 110px;
   }
 }

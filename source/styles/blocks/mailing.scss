@@ -31,6 +31,15 @@
   align-items: center;
 }
 
+input:hover {
+  border: 1px solid $grey;
+}
+
+input:invalid {
+  border: 2px solid #ff8282;
+}
+
+
 .mailing__form-email {
   @include oswald-black;
   width: 100%;
@@ -41,7 +50,7 @@
   height: 56px;
   text-align: left;
   margin-bottom: 16px;
-  border: 1 solid $grey;
+  border: 1 solid #e7e7e7;
   padding-left: 13px;
   text-decoration: none;
   text-transform: uppercase;
@@ -52,7 +61,7 @@
   content: "";
   z-index: 0;
   position: absolute;
-  margin-top: 8px;
+  margin-top: 7px;
   left: 0;
   width: 100%;
   height: 2px;
@@ -70,10 +79,11 @@
     font-size: 32px;
     line-height: 32px;
     padding-top: 0;
-    padding-left: 40;
+    padding-left: 40px;
     padding-bottom: 66px;
     min-width: 202px;
     width: 202px;
+    left: 0;
   }
 
   .mailing__text {

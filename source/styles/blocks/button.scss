@@ -88,9 +88,7 @@
   }
 
   .button--more {
-    width: 250px;
-    color: #000000;
-    margin: 0;
+    color: $grey;
     background-color: $basik-grey;
   }
 
@@ -104,7 +102,7 @@
     font-size: 20px;
     line-height: 26px;
     position: absolute;
-    top: 295px;
+    top: 292px;
     left: 120px;
     width: 244px;
     min-height: 54px;

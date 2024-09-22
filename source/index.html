@@ -13,7 +13,7 @@
   <script src="scripts/index.js" defer></script>
 </head>
 
-<body class="page__body">
+<body class="page__body page__body--cat">
   <header class="main-header">
     <div class="container">
       <div class="main-header__wrapper">
@@ -103,7 +103,7 @@
       <div class="container">
         <h2 class="example__title">Живой пример</h2>
         <div class="example__intro">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</div>
-        <div class="info_wrapper">
+        <div class="example__list-wrapper">
           <dl class="example__list">
             <div class="example__item">
               <dt class="example__item-quantity">5 КГ</dt>
@@ -119,26 +119,31 @@
             <p>15 000 РУБ.</p>
           </div>
         </div>
-        <div class="example__image">
-          <!-- <picture>
-            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/tablet/cat-after-tablet@1x.webp 1x, images/tablet/cat-after-tablet@2x.png 2x">
-            <img class="example__image-left" src="images/mobile/cat-after-mobile@1x.png" srcset="images/mobile/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот">
-          </picture>
-
-          <picture>
-            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/tablet/cat-before-tablet@1x.webp 1x, images/tablet/cat-before-tablet@2x.png 2x">
-            <img class="example__image-right" src="images/mobile/cat-before-mobile@1x.png" srcset="images/mobile/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Худой кот">
-          </picture>
-        </div>
-        <button class="example__button" type="button"><span class="visually-hidden">Интерактивная кнопка</span></button> -->
-        </div>
+        <figure class="compare">
+          <figcaption class="visually-hidden">Кот до и после питания</figcaption>
+          <div class="compare__wrapper compare-slider" style="--curtain-place: 0.5;">
+            <picture>
+              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/tablet/cat-before-tablet@1x.webp 1x, images/tablet/cat-before-tablet@2x.png 2x">
+              <img class="compare__image compare-slider__image compare-slider__image--cat_before" src="images/mobile/cat-before-mobile@1x.png" srcset="images/mobile/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Кот до">
+            </picture>
+            <div class="compare-slider__fold">
+              <button class="compare-slider__button" type="button">
+                <span class="visually-hidden">Cлайдер</span>
+              </button>
+            </div>
+            <picture>
+              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/tablet/cat-after-tablet@1x.webp 1x, images/tablet/cat-after-tablet@2x.png 2x">
+              <img class="compare__image compare-slider__image compare-slider__image--cat_after" src="images/mobile/cat-after-mobile@1x.png" srcset="images/mobile/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Кот после">
+            </picture>
+          </div>
+        </figure>
       </div>
     </section>
 
     <section class="cooperation">
       <div class="container container--cooperation">
         <div class="cooperation__wrapper">
-          <h3 class="cooperation__title">ПРИГЛАШАЕМ К СОТРУДНИЧЕСТВУ ДИЛЕРОВ!</h3>
+          <h3 class="cooperation__title">ПРИГЛАШАЕМ К&nbsp;СОТРУДНИЧЕСТВУ ДИЛЕРОВ!</h3>
           <p class="cooperation__adress">
             <span>ул. Большая Конюшенная, д. 19/8</span>
             <span>Санкт-Петербург</span>
@@ -182,8 +187,6 @@
       </div>
     </footer>
   </main>
-
-  <script src="script.js"></script>
 </body>
 
 </html>

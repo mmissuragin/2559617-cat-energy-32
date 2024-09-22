@@ -19,8 +19,8 @@
   }
 
   .container--cards {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 0;
+    padding-right: 0;
     display: grid;
     grid-template-columns: repeat(2, 324px);
     justify-content: space-between;
@@ -54,7 +54,7 @@
     justify-content: space-between;
     justify-items: center;
     grid-template-rows: auto 1fr auto;
-    grid-row-gap: 53px;
+    grid-row-gap: 63px;
   }
 
   .container--cooperation {

@@ -28,7 +28,13 @@
 
 @media (max-width: $mobile-last) {
   .appeal {
-    background-image: linear-gradient(#68b738d9  302px, #ffffff 50%), linear-gradient(90deg, #444444 calc(50% - 160px), #00000000 30% 70%, #444444 calc(50% + 160px)), url("../../images/mobile/index-background-cat-mobile@2x.png");
+    background-image:
+      linear-gradient(#68b738d9  302px, #ffffff 50%),
+      linear-gradient(90deg, #444444 calc(50% - 160px), #00000000 30% 70%, #444444 calc(50% + 160px)),
+      image-set("../../images/mobile/index-background-cat-mobile@1x.webp" 1x type("image/webp"),
+      "../../images/mobile/index-background-cat-mobile@2x.webp" 2x type("image/webp"),
+      "../../images/mobile/index-background-cat-mobile@1x.png" 1x type("image/png"),
+      "../../images/mobile/index-background-cat-mobile@2x.png" 2x type("image/png"));
     background-position: top center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -37,7 +43,7 @@
 
 @media (min-width: $tablet) {
   .appeal {
-    padding-top: 62px;
+    padding-top: 65px;
     position: relative;
   }
 
@@ -65,11 +71,11 @@
 @media (min-width: $desktop) {
   .appeal {
     position: relative;
-    min-height: 580px;
+    padding-top: 110px;
   }
 
   .appeal__title {
-    padding-top: 110px;
+    padding-top: 0;
     padding-left: 80px;
     width: 416px;
     min-height: 120px;

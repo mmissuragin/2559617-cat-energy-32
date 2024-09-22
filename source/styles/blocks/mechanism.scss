@@ -52,7 +52,9 @@
 
 @media (min-width: $tablet) {
   .mechanism {
-    padding-bottom: 10px;
+    padding-bottom: 0;
+    border-bottom: $border;
+    margin-bottom: 0;
   }
 
   .mechanism__title {
@@ -105,6 +107,7 @@
 @media (min-width: $desktop) {
   .mechanism {
     padding-bottom: 29px;
+    border: none;
   }
 
   .mechanism__title {
@@ -112,31 +115,8 @@
   }
 
   .mechanism__list {
-    grid-gap: 0;
-  }
-
-  .mechanism__item {
-    margin: 0;
-    background-color: tomato;
-  }
-
-  .mechanism__item--1 {
-    margin-right: 194px;
-  }
-
-  .mechanism__item--2 {
-    width: 246px;
-    margin-right: 94px;
-  }
-
-  .mechanism__item--3 {
-    width: 248px;
-    margin-right: 77px;
-  }
-
-  .mechanism__item--4 {
-    width: 250px;
-    margin-right: 77px;
+    grid-template-columns: repeat(auto-fill, 230px);
+    grid-gap: 0 95px;
   }
 }
 

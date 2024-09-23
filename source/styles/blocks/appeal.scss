@@ -29,8 +29,8 @@
 @media (max-width: $mobile-last) {
   .appeal {
     background-image:
-      linear-gradient(hsla(97, 53%, 47%, 0.85%)  302px, #ffffff 50%),
-      linear-gradient(90deg, #444444 calc(50% - 160px), hsla(0, 0%, 0%, 0) 30% 70%, #444444 calc(50% + 160px)),
+      linear-gradient(hwb(97 22% 28% / 0.85) 302px, #ffffff 50%),
+      linear-gradient(90deg, $grey calc(50% - 160px), hsla(0, 0%, 0%, 0) 30% 70%, $grey calc(60% + 160px)),
       image-set("../../images/mobile/index-background-cat-mobile@1x.webp" 1x type("image/webp"),
       "../../images/mobile/index-background-cat-mobile@2x.webp" 2x type("image/webp"),
       "../../images/mobile/index-background-cat-mobile@1x.png" 1x type("image/png"),

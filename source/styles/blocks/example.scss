@@ -74,7 +74,7 @@
 
 @media (min-width: $tablet) {
   .example {
-    background-image: linear-gradient(#ffffff 613px, #00000000 0);
+    background-image: linear-gradient(#ffffff 613px, hwb(0 0% 100% / 0) 0);
     padding-bottom: 101px;
     padding-top: 45px;
   }

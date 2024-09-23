@@ -1,0 +1,258 @@
+.card {
+  padding: 20px 0 25px;
+  border-top: $border;
+}
+
+.card__top {
+  width: 50%;
+  height: 107px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__bottom {
+  width: 50%;
+}
+
+
+.card__info {
+  height: 107px;
+  display: flex;
+  margin: 0 auto;
+  padding-bottom: 16px;
+}
+
+.card__title {
+  @include oswald-black;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  padding-bottom: 14px;
+  height: 41px;
+  width: 76px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.card__description {
+  @include lato-dark-grey;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card__description-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card--more {
+  display: block;
+  flex-direction: column;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.card__title--more {
+  @include oswald-black;
+  font-size: 16px;
+  line-height: 20px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  width: auto;
+  margin-bottom: 25px;
+  padding-bottom: 7px;
+}
+
+.card__title--more::before {
+  content: "";
+  background-image: url("../../icons/plus.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30px;
+  display: block;
+  margin-bottom: 23px;
+  margin-top: 0;
+}
+
+.card__description--more {
+  @include lato-dark-grey;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  padding-bottom: 21px;
+  padding-top: 7px;
+}
+
+@media (min-width: $tablet) {
+  .card {
+    padding: 10px 20px 0;
+    background-color: $basik-grey;
+    width: 284px;
+    min-height: 501px;
+    border: none;
+    background-image: linear-gradient(#ffffff 81px, hsla(0, 0%, 0%, 0) 0);
+  }
+
+  .card__top {
+    width: 200px;
+    height: 210px;
+    flex: 0 0 210px;
+    margin: 0 auto;
+  }
+
+  .card__image {
+    width: 200px;
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card__bottom {
+    width: 250px;
+    margin: 0 auto;
+    padding-bottom: 32px;
+  }
+
+  .card__info {
+    width: 280px;
+    height: 107px;
+    display: contents;
+    margin: 0 auto;
+  }
+
+  .card__title {
+    @include oswald-black;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 22px;
+    padding-bottom: 13px;
+
+    height: auto;
+    width: 135px;
+
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
+  }
+
+  .card__description {
+    display: flex;
+  }
+
+  .card__description-item {
+    @include lato-dark-grey;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid #cdcdcd 1px;
+    padding-top: 9px;
+    padding-bottom: 2px;
+  }
+
+  .card--more {
+    background-color: #ffffff;
+    border: $border;
+    min-height: 429px;
+    padding-top: 0;
+  }
+
+  .card__title--more {
+    padding-bottom: 22px;
+    padding-top: 0;
+  }
+
+
+  .card__title--more::before {
+    content: "";
+    background-image: url("../../icons/plus.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: block;
+  }
+
+  .card__description--more {
+    @include lato-dark-grey;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    padding-bottom: 82px;
+    width: 170px;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+}
+
+@media (min-width: $desktop) {
+  .card {
+    width: 245px;
+    border: none;
+    padding: 10px 0 0;
+
+    background-image: linear-gradient(#ffffff 81px, hsla(0, 0%, 0%, 0) 0);
+  }
+
+  .card__title {
+    font-size: 20px;
+    line-height: 24px;
+    padding-top: 0;
+    padding-bottom: 23px;
+  }
+
+  .card__top {
+    width: 169px;
+    height: 210px;
+    margin-bottom: 12px;
+  }
+
+  .card__description-item {
+    padding-bottom: 8px;
+    padding-top: 3px;
+    margin-left: 38px;
+    margin-right: 38px;
+  }
+
+  .card__bottom {
+    padding-bottom: 32px;
+    margin: 0;
+    width: 100%;
+  }
+
+  .card--more {
+    border: 2px solid $basik-grey;
+    background-color: #ffffff;
+    padding: 0;
+    width: 245px;
+  }
+
+  .card__title--more {
+    padding-bottom: 26px;
+    padding-top: 0;
+  }
+
+
+  .card__title--more::before {
+    margin-bottom: 40px;
+  }
+
+  .card__description--more {
+    padding-bottom: 90px;
+  }
+}

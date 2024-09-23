@@ -1,1 +1,102 @@
-/* здесь используйте глобальные селекторы img, body, html и так далее */
+dd {
+  display: block;
+  margin-inline-start: 0;
+  unicode-bidi: isolate;
+}
+
+h1 {
+  display: block;
+  font-size: 0;
+  margin-block: 0 0;
+  margin-inline: 0 0;
+  font-weight: 700;
+  unicode-bidi: isolate;
+}
+
+h2 {
+  display: block;
+  font-size: 0;
+  margin-block: 0 0;
+  margin-inline: 0 0;
+  font-weight: 700;
+  unicode-bidi: isolate;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block: 0 0;
+  margin-inline: 0 0;
+  font-weight: 700;
+  unicode-bidi: isolate;
+}
+
+p {
+  display: block;
+  margin-block: 0 0;
+  margin-inline: 0 0;
+  unicode-bidi: isolate;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block: 0 0;
+  margin-inline: 0 0;
+  padding-inline-start: 40px;
+  unicode-bidi: isolate;
+}
+
+ol {
+  display: block;
+  list-style-type: decimal;
+  margin-block: 0 0;
+  margin-inline: 0 0;
+  padding-inline-start: 40px;
+  unicode-bidi: isolate;
+}
+
+dl {
+  display: block;
+  margin-block: 0 0;
+  margin-inline: 0 0;
+  unicode-bidi: isolate;
+}
+
+.input {
+  border: none;
+}
+
+
+.button {
+  margin: 0;
+  padding-block: 0;
+  padding-inline: 0;
+  border-width: 0;
+  border-style: outset;
+  border-color: buttonborder;
+  border-image: initial;
+}
+
+
+input {
+  text-rendering: auto;
+  color: fieldtext;
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-indent: 0;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  appearance: auto;
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  background-color: field;
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+  padding-block: 0;
+  padding-inline: 0;
+}

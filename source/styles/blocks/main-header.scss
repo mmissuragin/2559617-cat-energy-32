@@ -1,91 +1,69 @@
 .main-header {
   width: auto;
-  border-bottom: $border-bottom;
+  padding-top: 13px;
+  border-bottom: $border;
   position: relative;
+  justify-content: center;
+  min-height: 52px;
 }
 
 .main-header__logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: calc(50% + 60px);
+  padding-top: 5px;
+  height: 38px;
+  width: calc(50% + 50px);
+}
+
+.main-header__logo:hover {
+  opacity: 80%;
+}
+
+.main-header__active:hover {
+  opacity: 30%;
 }
 
 .main-header__wrapper {
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+  min-height: auto;
   align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 
 @media (min-width: $tablet) {
   .main-header {
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     padding-top: 25px;
-    padding-bottom: 25px;
     border: none;
   }
 
   .main-header__wrapper {
-    padding: 25px 30px;
     width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
   }
 
   .main-header__logo {
     gap: 13px;
     justify-content: flex-start;
-  }
-
-  .main-nav__wrapper {
-    display: flex;
-    width: auto;
-  }
-
-  .main-nav__toggle {
-    display: none;
-  }
-
-  .main-nav__list {
-    display: flex;
-    list-style: none;
-    min-width: 436px;
-    gap: 22px 33px;
-    margin: 0;
-    padding: 0;
-  }
-
-  .main-nav__item a {
-    @include oswald-black;
-    font-size: 18px;
-    line-height: 24px;
-    text-decoration: none;
-  }
-
-  .main-nav__item--active {
-    padding-bottom: 8px;
-    border-bottom: 2px solid $green;
+    width: 174px;
+    height: 50px;
+    padding-bottom: 0;
   }
 }
 
 @media (min-width: $desktop) {
+  .main-header {
+    padding-top: 55px;
+    padding-bottom: 0;
+    height: 59px;
+  }
+
   .main-header__wrapper {
-    padding: 55px 110px;
-  }
-
-  .main-nav__wrapper {
-    width: 475px;
-    padding-left: 110px;
-    padding-right: 110px;
-  }
-
-  .main-nav__item a {
-    font-size: 20px;
-    line-height: 30px;
+    padding: 0;
+    height: 59px;
   }
 }

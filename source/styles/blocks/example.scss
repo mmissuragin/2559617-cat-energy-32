@@ -1,13 +1,14 @@
 
 .example {
   background-color: #eaeaea;
+  padding-top: 25px;
+  padding-bottom: 40px;
 }
 
 .example__title {
   @include oswald-black;
   font-size: 36px;
   line-height: 40px;
-  padding-top: 25px;
   padding-bottom: 40px;
 }
 
@@ -25,14 +26,14 @@
 }
 
 .example__item {
-  width: 124px;
-  height: 56px;
-  border: $border-bottom;
+  min-width: 124px;
+  min-height: 56px;
+  border: $border;
   text-align: center;
-  place-items: center;
   margin-bottom: 34px;
   display: grid;
   position: relative;
+  place-items: center;
 }
 
 .example__item-quantity {
@@ -50,7 +51,7 @@
   background-color: #eaeaea;
   width: 50%;
   position: absolute;
-  bottom: -17px;
+  bottom: -13px;
 }
 
 .example__item-expenses {
@@ -65,37 +66,51 @@
   padding-bottom: 20px;
 }
 
-.example__image {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.example__image-wrapper {
+  position: relative;
+  width: 280px;
+  height: 256px;
 }
 
 @media (min-width: $tablet) {
+  .example {
+    background-image: linear-gradient(#ffffff 613px, hwb(0 0% 100% / 0) 0);
+    padding-bottom: 101px;
+    padding-top: 45px;
+  }
+
   .example__title {
     font-size: 60px;
     line-height: 60px;
-    padding-top: 45px;
     padding-bottom: 60px;
   }
 
   .example__intro {
-    @include lato-dark-grey;
     font-size: 16px;
     line-height: 24px;
     padding-bottom: 55px;
   }
 
+  .example__list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 43px;
+    display: ruby;
+  }
+
   .example__item-quantity {
     font-size: 30px;
     line-height: 37px;
-    padding-bottom: 11px;
+    padding-bottom: 5px;
   }
 
 
   .example__item-description {
     font-size: 14px;
     line-height: 14px;
+    min-width: 125px;
+    bottom: -5px;
+    background-color: #ffffff;
   }
 
 
@@ -105,27 +120,90 @@
     display: flex;
     align-items: right;
     flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 12px;
     text-align: right;
-    width: 174px;
-    min-height: 49px;
     gap: 9px;
   }
 
-  .info_wrapper {
+  .example__list-wrapper {
     display: flex;
     justify-content: space-between;
-  }
-
-  .example__list {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10%;
-    display: ruby;
+    padding-bottom: 66px;
   }
 
   .example__item {
     width: 162px;
+    height: 72px;
+    margin-right: 38px;
+  }
+}
+
+
+@media (min-width: $desktop) {
+  .example {
+    padding-bottom: 75px;
+    background-image: linear-gradient(#ffffff 136px, $basik-grey 0);
+    padding-top: 0;
+  }
+
+  .example__title {
+    padding-bottom: 76px;
+    padding-top: 0;
+  }
+
+  .example__intro {
+    padding-top: 70px;
+    padding-bottom: 69px;
+    width: 436px;
+    height: 96px;
+  }
+
+  .example__list-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-bottom: 0;
+  }
+
+  .example__list {
+    padding-bottom: 0;
+    margin-bottom: 0;
     height: 77px;
-    margin-right: 43px;
+  }
+
+  .example__item {
+    margin-bottom: 0;
+    margin-right: 35px;
+    border-radius: 5px;
+  }
+
+  .example__item-quantity {
+    padding-bottom: 7px;
+    min-width: 37px;
+  }
+
+  .example__item-description {
+    min-width: 125px;
+    min-height: 14px;
+    bottom: -4px;
+    background-color: $basik-grey;
+  }
+
+  .example__item-expenses {
+    min-width: 327px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding: 0;
+    padding-top: 55px;
+    gap: 63px;
+  }
+
+  .example__item-expenses p {
+    min-width: 174px;
+    text-align: left;
+    height: auto;
   }
 }

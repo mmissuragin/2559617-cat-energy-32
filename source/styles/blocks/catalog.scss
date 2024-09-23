@@ -1,291 +1,39 @@
+.catalog {
+  padding-top: 27px;
+  padding-bottom: 25px;
+}
+
 .catalog__title {
   @include oswald-black;
   font-size: 36px;
   line-height: 36px;
-  padding-top: 27px;
   padding-bottom: 41px;
-}
-
-.card {
-  padding-top: 20px;
-  padding-bottom: 25px;
-  border-top: $border-bottom;
-}
-
-
-.card__top {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.card__bottom {
-  padding-right: 20px;
-  padding-bottom: 17px;
-}
-
-.card__info {
-  width: 280px;
-  height: 107px;
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
-  justify-content: space-between;
-}
-
-.card__title {
-  @include oswald-black;
-  font-size: 16px;
-  line-height: 20px;
-  text-decoration: none;
-  padding-bottom: 14px;
-  height: 41px;
-  width: 76px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.card__description {
-  @include lato-dark-grey;
-  font-size: 12px;
-  line-height: 16px;
-  min-width: 140px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.card__description-item {
-  display: flex;
-  justify-content: space-between;
-}
-
-.card--more {
-  display: block;
-  font-size: 16px;
-  line-height: 20px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  border-top: $border-bottom;
-}
-
-.card__title--more {
-  @include oswald-black;
-  font-size: 16px;
-  line-height: 20px;
-  display: block;
-  text-align: center;
-  padding-bottom: 8px;
-  text-decoration: none;
-}
-
-
-.card__title--more::before {
-  content: "";
-  background-image: url("../../icons/plus.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 30px;
-  margin-bottom: 23px;
-  display: block;
-}
-
-.card__description--more {
-  @include lato-dark-grey;
-  font-size: 12px;
-  line-height: 16px;
-  text-align: center;
-  padding-bottom: 21px;
 }
 
 @media (min-width: $tablet) {
   .catalog {
     padding-bottom: 74px;
+    padding-top: 65px;
   }
 
   .catalog__title {
-    @include oswald-black;
-    font-size: 36px;
-    line-height: 36px;
-    padding-top: 27px;
-    padding-bottom: 41px;
-  }
-
-  .card {
+    font-size: 60px;
+    line-height: 60px;
     padding-top: 0;
-    padding-bottom: 0;
-    background-color: $basik-grey;
-    width: 324px;
-    min-height: 511px;
-    border: none;
-
-    background-image: linear-gradient(#ffffff 81px, #00000000 0);
-  }
-
-  .card__top {
-    width: 50%;
-    flex: 0 0 210px;
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-  }
-
-  .card__image {
-    width: 200px;
-    height: 210px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .card__bottom {
-    padding-right: 37px;
-    padding-left: 37px;
-    padding-bottom: 0;
-  }
-
-  .card__info {
-    width: 280px;
-    height: 107px;
-    display: contents;
-    align-items: center;
-    margin: 0 auto;
-    justify-content: space-between;
-  }
-
-  .card__title {
-    @include oswald-black;
-    font-size: 20px;
-    line-height: 24px;
-    text-decoration: none;
-    text-align: center;
-    padding-top: 22px;
-    padding-bottom: 20px;
-
-    height: auto;
-    width: 135px;
-
-    display: block;
-    justify-content: center;
-    align-items: center;
-
-    margin: 0 auto;
-  }
-
-  .card__description {
-    display: flex;
-  }
-
-  .card__description-item {
-    @include lato-dark-grey;
-    font-size: 16px;
-    line-height: 20px;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: solid #cdcdcd 1px;
-    padding-top: 5px;
-    padding-bottom: 8px;
-  }
-
-  .container {
-    width: 100%;
-    max-width: 1120px;
-    padding: 0 15px;
-    margin: 0 auto;
-  }
-
-  .card--more {
-    border: 2px solid $basik-grey;
-    background-color: #ffffff;
-    margin-top: 80px;
-    padding: 0;
-    min-width: 324px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card__title--more {
-    @include oswald-black;
-    font-size: 20px;
-    line-height: 24px;
-    padding-bottom: 23px;
-    text-decoration: none;
-    width: 134px;
-  }
-
-
-  .card__title--more::before {
-    content: "";
-    background-image: url("../../icons/plus.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 60px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    display: block;
-  }
-
-  .card__description--more {
-    @include lato-dark-grey;
-    font-size: 16px;
-    line-height: 18px;
-    text-align: center;
-    padding-bottom: 82px;
-    width: 170px;
-  }
-
-  .container__cards {
-    display: grid;
-    grid-template-columns: repeat(3, 324px);
-    justify-content: center;
-    justify-items: center;
-    margin: 0 auto;
-    gap: 90px 90px;
+    padding-bottom: 84px;
   }
 }
 
 @media (min-width: $desktop) {
   .catalog {
+    padding-top: 74px;
     padding-bottom: 71px;
   }
 
   .catalog__title {
-    @include oswald-black;
-    font-size: 36px;
+    font-size: 60px;
     line-height: 60px;
     padding-bottom: 84px;
-  }
-
-  .card {
-    width: 245px;
-    min-height: 511px;
-    border: none;
-
-    background-image: linear-gradient(#ffffff 81px, #00000000 0);
-  }
-
-  .container__cards {
-    display: grid;
-    grid-template-columns: repeat(4, 245px);
-    justify-content: center;
-    justify-items: center;
-    margin: 0 auto;
-    gap: 90px 90px;
-  }
-
-  .card--more {
-    border: 2px solid $basik-grey;
-    background-color: #ffffff;
-    margin-top: 80px;
-    padding: 0;
-    min-width: 245px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding-top: 0;
   }
 }

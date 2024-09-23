@@ -3,51 +3,39 @@
   padding-right: 20px;
 }
 
-.container--appeal {
-  margin-left: 20px;
-  margin-right: 20px;
+.container--cooperation {
+  padding: 26px 20px;
 }
 
-.container--physique {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.container--mechanism {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.container--example {
-  padding-left: 20px;
-  padding-right: 20px;
+.container--cards {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 @media (min-width: $tablet) {
   .container {
     padding-left: 30px;
     padding-right: 30px;
-    margin: 0;
   }
 
-  .container--appeal {
-    margin-left: 30px;
-    margin-right: 30px;
+  .container--cards {
+    padding-left: 0;
+    padding-right: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 324px);
+    justify-content: center;
+    place-items: end center;
+    gap: 60px;
+  }
+
+  .container--cooperation {
+    padding: 60px 70px;
   }
 
   .container--physique {
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-
-  .container--mechanism {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  .container--example {
-    padding-left: 30px;
-    padding-right: 30px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
   }
 }
 
@@ -55,32 +43,35 @@
   .container {
     padding-left: 110px;
     padding-right: 110px;
-  }
-
-  .container--appeal {
-    margin-left: 110px;
-    margin-right: 110px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1220px;
   }
 
   .container--physique {
-    margin-left: 110px;
-    margin-right: 110px;
-    align-items: center;
     display: flex;
-    justify-content: center;
+    gap: 80px;
   }
 
-  .container--catalog {
-    margin-left: 110px;
+  .container--cards {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 245px);
+    justify-content: space-between;
+    justify-items: center;
+    grid-row-gap: 63px;
   }
 
-  .container--mechanism {
-    padding-left: 110px;
-    padding-right: 110px;
+  .container--cooperation {
+    padding: 0;
+    margin: 0;
+  }
+
+  .container--appeal {
+    position: relative;
   }
 
   .container--example {
-    padding-left: 110px;
-    padding-right: 110px;
+    position: relative;
   }
 }

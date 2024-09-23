@@ -2,18 +2,23 @@
   background-color: $basik-grey;
 }
 
-.footer__wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
-}
 
 .footer__logo {
-  border-bottom: $border-bottom;
-  padding-top: 20px;
+  border-bottom: $border;
+  padding-top: 40px;
   padding-bottom: 20px;
+  height: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.footer__logo:hover {
+  opacity: 60%;
+}
+
+.footer__logo:active {
+  opacity: 60%;
 }
 
 
@@ -21,28 +26,41 @@
   @include lato-dark-grey;
   font-size: 16px;
   line-height: 20px;
-  text-align: right;
   text-decoration: none;
+  text-align: center;
+  height: 20px;
 }
 
 .footer__social-list {
+  padding-inline-start: 0;
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
-  border-bottom: $border-bottom;
+  min-width: 132px;
+  border-bottom: $border;
+  gap: 24px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.footer__social-item {
-  margin-right: 24px;
+
+.footer__social-link:hover::before {
+  background-color: #68b738;
+}
+
+.footer__social-link:active::before {
+  background-color: #68b738;
+  opacity: 30%;
 }
 
 
-.footer__social-item--vk::before {
+.footer__social-link--vk::before {
   content: "";
-  background-image: url("../../icons/vkontakte.svg");
+  mask-image: url("../../icons/vkontakte.svg");
+  background-color: $grey;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -51,9 +69,10 @@
   display: block;
 }
 
-.footer__social-item--youtube::before {
+.footer__social-link--youtube::before {
   content: "";
-  background-image: url("../../icons/youtube.svg");
+  mask-image: url("../../icons/youtube.svg");
+  background-color: $grey;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -62,9 +81,10 @@
   display: block;
 }
 
-.footer__social-item--telegram::before {
+.footer__social-link--telegram::before {
   content: "";
-  background-image: url("../../icons/telegram.svg");
+  mask-image: url("../../icons/telegram.svg");
+  background-color: $grey;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -77,14 +97,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding-top: 27px;
+
+  padding-top: 20px;
   padding-bottom: 40px;
 }
 
 .footer__academy-icon {
-  background-image: url("../../icons/logo-akademy-icon.svg");
+  mask-image: url("../../icons/logo-akademy-icon.svg");
+  background-color: $grey;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -93,40 +113,73 @@
   display: inline-block;
 }
 
+.footer__academy-icon:hover {
+  background-color: #68b738;
+}
+
+.footer__academy-icon:active {
+  opacity: 60%;
+}
+
 @media (min-width: $tablet) {
   .footer__wrapper {
     display: flex;
     align-items: center;
-    padding-left: 30px;
-    padding-right: 30px;
-    height: 177px;
+    justify-content: space-between;
+    height: 37px;
+    padding: 55px 0;
   }
 
   .footer__logo {
-    margin-right: auto;
     border: none;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .footer__social-list {
     display: flex;
     list-style: none;
     padding: 0;
+    padding-bottom: 7px;
+    padding-left: 40px;
     border: none;
-    justify-content: center;
-    width: auto;
+    justify-content: space-between;
+    width: 132px;
   }
 
   .footer__social-item {
-    margin: 0 24px; /* Отступ между иконками */
+    margin: 0;
   }
 
   .footer__academy {
     display: flex;
     align-items: center;
     border: none;
+    width: 168px;
+    padding: 0;
+    padding-bottom: 4px;
+    margin: 0;
   }
 
   .footer__academy-text {
-    margin-right: 23px;
+    padding-left: 6px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .footer__wrapper {
+    padding: 66px 0;
+  }
+
+  .footer__social-list {
+    width: 132px;
+    height: 22px;
+    padding-bottom: 2px;
+  }
+
+  .footer__academy {
+    height: 37px;
+    width: 168px;
+    padding: 0;
   }
 }

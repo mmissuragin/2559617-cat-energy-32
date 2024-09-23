@@ -7,8 +7,13 @@
   font-size: 24px;
   line-height: 24px;
   text-decoration: none;
-  padding-top: 40px;
   padding-bottom: 32px;
+  padding-left: 20px;
+  padding-right: 40px;
+  left: -20px;
+  position: relative;
+  width: 152px;
+  background-color: #ffffff;
 }
 
 .mailing__text {
@@ -20,45 +25,65 @@
   padding-bottom: 24px;
 }
 
-.mailing-button {
-  @include oswald-white;
-  background-color: $green;
-  margin: 0 auto;
-  height: 40;
-  text-align: center;
-  text-decoration: none;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .mailing__form {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+input:hover {
+  border: 1px solid $grey;
+}
+
+input:invalid {
+  border: 2px solid #ff8282;
+}
+
+
 .mailing__form-email {
   @include oswald-black;
-  width: 280px;
+  width: 100%;
   color: $grey;
+  font-size: 20px;
+  line-height: 30px;
   margin: 0 auto;
   height: 56px;
-  text-align: center;
-  text-decoration: none;
+  text-align: left;
   margin-bottom: 16px;
+  border: 1 solid #e7e7e7;
+  padding-left: 13px;
+  text-decoration: none;
   text-transform: uppercase;
-  border: 1 solid $grey;
+  box-sizing: border-box;
+}
+
+.mailing::before {
+  content: "";
+  z-index: 0;
+  position: absolute;
+  margin-top: 7px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: $green;
 }
 
 
 @media (min-width: $tablet) {
+  .mailing {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
   .mailing__title {
     font-size: 32px;
     line-height: 32px;
-    padding-top: 80px;
+    padding-top: 0;
+    padding-left: 40px;
     padding-bottom: 66px;
+    min-width: 202px;
+    width: 202px;
+    left: 0;
   }
 
   .mailing__text {
@@ -81,11 +106,53 @@
     width: 376px;
     color: $grey;
     margin: 0 auto;
-    height: 55px;
-    text-align: center;
-    text-decoration: none;
-    margin-bottom: 16px;
-    text-transform: uppercase;
-    border: 1 solid $grey;
+    height: 56px;
+  }
+
+  .mailing::before {
+    content: "";
+    z-index: 0;
+    position: absolute;
+    margin-top: 14px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $green;
+  }
+}
+
+@media (min-width: $desktop) {
+  .mailing {
+    padding-bottom: 104px;
+    padding-top: 96px;
+  }
+
+  .mailing__title {
+    font-size: 40px;
+    line-height: 40px;
+    padding: 0 40 72px;
+    min-width: 253px;
+    left: -40;
+  }
+
+  .mailing__container {
+    width: 752px;
+    min-height: 112px;
+  }
+
+  .mailing__form-email {
+    width: 496px;
+    padding-left: 13;
+  }
+
+  .mailing::before {
+    content: "";
+    z-index: 0;
+    position: absolute;
+    margin-top: 17px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $green;
   }
 }

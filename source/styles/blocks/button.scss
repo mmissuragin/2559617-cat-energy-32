@@ -11,7 +11,16 @@
   align-items: center;
 }
 
-.button-more {
+.button:hover {
+  background-color: #5eaa2f;
+}
+
+.button:active {
+  background-color: #5eaa2f;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button--more {
   @include oswald-black;
   color: $grey;
   background-color: $basik-grey;
@@ -26,12 +35,36 @@
   align-items: center;
 }
 
-.button--mailing {
+.button--more:hover {
+  background-color: #ebebeb;
+}
+
+.button--more:active {
+  background-color: #ebebeb;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button--appeal {
   @include oswald-white;
   background-color: $green;
   margin: 0 auto;
+  height: 40;
+  text-align: center;
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button--mailing {
+  @include oswald-white;
+  font-size: 20px;
+  line-height: 26px;
+  background-color: $green;
+  margin: 0 auto;
   height: 56;
-  width: 280px;
+  width: 100%;
   text-align: center;
   text-decoration: none;
 
@@ -48,15 +81,16 @@
     align-items: center;
     width: 250px;
     height: 40px;
-    margin-top: 32px;
     text-decoration: none;
     display: flex;
     position: static;
     justify-content: center;
   }
 
-  .button-more {
-    width: 250px;
+  .button--more {
+    color: $grey;
+    background-color: $basik-grey;
+    margin-bottom: 40px;
   }
 
   .button--additional {
@@ -65,12 +99,14 @@
     margin-top: 0;
   }
 
-  .button-appeal {
-    width: 244px;
+  .button--appeal {
     position: absolute;
-    padding: 0;
-    margin-left: 10px;
-    margin-top: 0;
+    top: 370px;
+    left: 120px;
+    font-size: 20px;
+    line-height: 26px;
+    width: 244px;
+    min-height: 54px;
   }
 
   .button--mailing {
@@ -79,6 +115,10 @@
     width: 256px;
     font-size: 20px;
     line-height: 26px;
+  }
+
+  .button--card {
+    margin-bottom: 40px;
   }
 }
 
@@ -91,7 +131,23 @@
     width: 169px;
   }
 
-  .button-appeal {
+  .button--appeal {
     width: 244px;
+    min-height: 54px;
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0;
+    margin-left: 80px;
+    position: static;
+  }
+
+  .button--additional {
+    width: 244px;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .button--mailing {
+    width: 256px;
   }
 }

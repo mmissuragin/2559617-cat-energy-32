@@ -90,6 +90,7 @@
   .button--more {
     color: $grey;
     background-color: $basik-grey;
+    margin-bottom: 40px;
   }
 
   .button--additional {
@@ -101,9 +102,6 @@
   .button--appeal {
     font-size: 20px;
     line-height: 26px;
-    position: absolute;
-    top: 292px;
-    left: 120px;
     width: 244px;
     min-height: 54px;
   }
@@ -114,6 +112,10 @@
     width: 256px;
     font-size: 20px;
     line-height: 26px;
+  }
+
+  .button--card {
+    margin-bottom: 40px;
   }
 }
 
@@ -127,13 +129,12 @@
   }
 
   .button--appeal {
-    position: absolute;
     width: 244px;
     min-height: 54px;
     font-size: 20px;
     line-height: 26px;
-    top: 343px;
-    left: 190px;
+    margin: 0;
+    margin-left: 80px;
   }
 
   .button--additional {

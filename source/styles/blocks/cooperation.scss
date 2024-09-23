@@ -1,3 +1,7 @@
+.cooperation--catalog {
+  background-color: $basik-grey;
+}
+
 .cooperation__title {
   @include oswald-black;
   font-size: 16px;
@@ -30,10 +34,6 @@
 
 
 @media (min-width: $tablet) {
-  .cooperation {
-    background-color: $basik-grey;
-  }
-
   .cooperation__title {
     @include oswald-black;
     font-size: 20px;

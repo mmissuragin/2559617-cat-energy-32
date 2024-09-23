@@ -32,8 +32,8 @@
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть главное меню</span></button>
           <div class="main-nav__menu">
-            <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--active">
+            <ul class="main-nav__list main-nav__list--desktop">
+              <li class="main-nav__item main-nav__item--active main-nav__item--active--desktop">
                 <a href="/">ГЛАВНАЯ</a>
               </li>
               <li class="main-nav__item">
@@ -53,7 +53,7 @@
     <h1 class="visually-hidden">Cat Energy</h1>
 
     <section class="appeal">
-      <div class="container">
+      <div class="container container--appeal">
         <h2 class=" appeal__title">Функциональное питание для котов</h2>
         <p class="appeal__description">ЗАНЯЛСЯ СОБОЙ? ЗАЙМИСЬ КОТОМ!</p>
         <picture class="appeal_picture">
@@ -100,7 +100,7 @@
     </section>
 
     <section class="example">
-      <div class="container">
+      <div class="container container--example">
         <h2 class="example__title">Живой пример</h2>
         <div class="example__intro">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</div>
         <div class="example__list-wrapper">
@@ -121,7 +121,7 @@
         </div>
         <figure class="compare">
           <figcaption class="visually-hidden">Кот до и после питания</figcaption>
-          <div class="compare__wrapper compare-slider" style="--curtain-place: 0.5;">
+          <div class="compare__wrapper compare-slider">
             <picture>
               <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/tablet/cat-before-tablet@1x.webp 1x, images/tablet/cat-before-tablet@2x.png 2x">
               <img class="compare__image compare-slider__image compare-slider__image--cat_before" src="images/mobile/cat-before-mobile@1x.png" srcset="images/mobile/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Кот до">
@@ -168,14 +168,14 @@
           </div>
 
           <ul class="footer__social-list">
-            <li class="footer__social-item footer__social-item--vk">
-              <a class="footer__social-link" href="https://vk.com/"><span class="visually-hidden">ВК</span></a>
+            <li class="footer__social-item">
+              <a class="footer__social-link footer__social-link--vk" href="https://vk.com/"><span class="visually-hidden">ВК</span></a>
             </li>
-            <li class="footer__social-item footer__social-item--youtube">
-              <a class="footer__social-link" href="/"><span class="visually-hidden">ЮТУБ</span></a>
+            <li class="footer__social-item">
+              <a class="footer__social-link footer__social-link--youtube" href="/"><span class="visually-hidden">ЮТУБ</span></a>
             </li>
-            <li class="footer__social-item footer__social-item--telegram">
-              <a class="footer__social-link" href="/"><span class="visually-hidden">ТГ</span></a>
+            <li class="footer__social-item">
+              <a class="footer__social-link footer__social-link--telegram" href="/"><span class="visually-hidden">ТГ</span></a>
             </li>
           </ul>
 

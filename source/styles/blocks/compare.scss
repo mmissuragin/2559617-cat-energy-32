@@ -1,16 +1,19 @@
 .compare {
   position: relative;
-  margin: 0 auto;
+  margin: 0;
+  min-width: 280px;
+  min-height: 256px;
 }
 
 .compare__wrapper {
   display: block;
-  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .compare-slider {
   display: grid;
-  grid-template-columns: calc(var(--curtain-place) * 100%) auto calc((1 - var(--curtain-place)) * 100%);
+  grid-template-columns: calc(0.5 * 100%) auto calc((1 - 0.5) * 100%);
   width: min(100%, 560px);
   aspect-ratio: 280/256;
 }
@@ -85,11 +88,6 @@
 
 @media (min-width: $tablet) {
   .compare {
-    width: 512px;
-    height: 512px;
-  }
-
-  .compare__wrapper {
     min-width: 560px;
     min-height: 512px;
   }

@@ -42,20 +42,22 @@
   min-width: 132px;
   border-bottom: $border;
   gap: 24px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 
-.footer__social-item:hover::before {
+.footer__social-link:hover::before {
   background-color: #68b738;
 }
 
-.footer__social-item:active::before {
+.footer__social-link:active::before {
   background-color: #68b738;
   opacity: 30%;
 }
 
 
-.footer__social-item--vk::before {
+.footer__social-link--vk::before {
   content: "";
   mask-image: url("../../icons/vkontakte.svg");
   background-color: $grey;
@@ -67,7 +69,7 @@
   display: block;
 }
 
-.footer__social-item--youtube::before {
+.footer__social-link--youtube::before {
   content: "";
   mask-image: url("../../icons/youtube.svg");
   background-color: $grey;
@@ -79,7 +81,7 @@
   display: block;
 }
 
-.footer__social-item--telegram::before {
+.footer__social-link--telegram::before {
   content: "";
   mask-image: url("../../icons/telegram.svg");
   background-color: $grey;

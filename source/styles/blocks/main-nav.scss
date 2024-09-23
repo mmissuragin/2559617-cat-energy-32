@@ -146,6 +146,14 @@
   .main-nav__item--active {
     padding-bottom: 36px;
   }
+
+  .main-nav__list--desktop a {
+    @include oswald-white;
+  }
+
+  .main-nav__item--active--desktop {
+    border-bottom: 2px solid #ffffff;
+  }
 }
 
 

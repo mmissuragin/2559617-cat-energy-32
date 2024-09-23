@@ -4,6 +4,7 @@
   border-bottom: $border;
   position: relative;
   justify-content: center;
+  min-height: 52px;
 }
 
 .main-header__logo {
@@ -59,7 +60,6 @@
     padding-top: 55px;
     padding-bottom: 0;
     height: 59px;
-    background-color: tomato;
   }
 
   .main-header__wrapper {

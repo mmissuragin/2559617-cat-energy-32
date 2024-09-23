@@ -74,9 +74,9 @@
 
 @media (min-width: $tablet) {
   .example {
-    padding-top: 0;
-    background-image: linear-gradient(#ffffff 574px, #00000000 0);
+    background-image: linear-gradient(#ffffff 613px, #00000000 0);
     padding-bottom: 101px;
+    padding-top: 40px;
   }
 
   .example__title {
@@ -129,7 +129,7 @@
   .example__list-wrapper {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 99px;
+    padding-bottom: 66px;
   }
 
   .example__item {
@@ -142,13 +142,14 @@
 
 @media (min-width: $desktop) {
   .example {
-    position: relative;
     padding-bottom: 75px;
     background-image: linear-gradient(#ffffff 136px, $basik-grey 0);
+    padding-top: 0;
   }
 
   .example__title {
     padding-bottom: 76px;
+    padding-top: 0;
   }
 
   .example__intro {

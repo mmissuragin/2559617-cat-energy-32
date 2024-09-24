@@ -91,3 +91,38 @@
     padding-right: 78px;
   }
 }
+
+
+//Стили для карты при выключенном JS
+.cooperation__map--nojs {
+  width: 100%;
+  height: 362px;
+  background-image:
+    image-set("../../images/mobile/map-mobile@1x.webp" 1x type("image/webp"),
+    "../../images/mobile/map-mobile@2x.webp" 2x type("image/webp"),
+    "../../images/mobile/map-mobile@1x.jpg" 1x type("image/jpg"),
+    "../../images/mobile/map-mobile@2x.jpg" 2x type("image/jpg"));
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+@media (min-width: $tablet) {
+  .cooperation__map--nojs {
+    height: 400px;
+    background-image:
+      image-set("../../images/tablet/map-tablet@1x.webp" 1x type("image/webp"),
+      "../../images/tablet/map-tablet@2x.webp" 2x type("image/webp"),
+      "../../images/tablet/map-tablet@1x.jpg" 1x type("image/jpg"),
+      "../../images/tablet/map-tablet@2x.jpg" 2x type("image/jpg"));
+  }
+}
+
+@media (min-width: $desktop) {
+  .cooperation__map--nojs {
+    background-image:
+      image-set("../../images/desktop/map-desktop@1x.webp" 1x type("image/webp"),
+      "../../images/desktop/map-desktop@2x.webp" 2x type("image/webp"),
+      "../../images/desktop/map-desktop@1x.jpg" 1x type("image/jpg"),
+      "../../images/desktop/map-desktop@2x.jpg" 2x type("image/jpg"));
+  }
+}

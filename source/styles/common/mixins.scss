@@ -9,7 +9,7 @@
 }
 
 @mixin oswald-black {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #000000;
@@ -17,20 +17,20 @@
 
 @mixin oswald-white {
   color: #ffffff;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 @mixin lato-black {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #000000;
 }
 
 @mixin lato-dark-grey {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: $grey;

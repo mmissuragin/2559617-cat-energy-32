@@ -1,5 +1,9 @@
 .gift {
-  background-image: url("../../images/mobile/catalog-background-cat-mobile@2x.png");
+  background-image:
+    image-set("../../images/mobile/catalog-background-cat-mobile@1x.webp" 1x type("image/webp"),
+    "../../images/mobile/catalog-background-cat-mobile@2x.webp" 2x type("image/webp"),
+    "../../images/mobile/catalog-background-cat-mobile@1x.png" 1x type("image/png"),
+    "../../images/mobile/catalog-background-cat-mobile@2x.png" 2x type("image/png"));
   background-size: cover;
   background-repeat: no-repeat;
   height: 290px;
@@ -13,7 +17,11 @@
 
 @media (min-width: $tablet) {
   .gift {
-    background-image: url("../../images/tablet/catalog-background-cat-tablet@2x.png");
+    background-image:
+      image-set("../../images/tablet/catalog-background-cat-tablet@1x.webp" 1x type("image/webp"),
+      "../../images/tablet/catalog-background-cat-tablet@2x.webp" 2x type("image/webp"),
+      "../../images/tablet/catalog-background-cat-tablet@1x.png" 1x type("image/png"),
+      "../../images/tablet/catalog-background-cat-tablet@2x.png" 2x type("image/png"));
     background-size: cover;
     background-repeat: no-repeat;
     height: 200px;
@@ -24,7 +32,11 @@
 
 @media (min-width: $desktop) {
   .gift {
-    background-image: url("../../images/desktop/catalog-background-cat-desktop@2x.png");
+    background-image:
+      image-set("../../images/desktop/catalog-background-cat-desktop@1x.webp" 1x type("image/webp"),
+      "../../images/desktop/catalog-background-cat-desktop@2x.webp" 2x type("image/webp"),
+      "../../images/desktop/catalog-background-cat-desktop@1x.png" 1x type("image/png"),
+      "../../images/desktop/catalog-background-cat-desktop@2x.png" 2x type("image/png"));
     background-size: cover;
     background-repeat: no-repeat;
     height: 288px;

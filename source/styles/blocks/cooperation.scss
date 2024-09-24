@@ -110,7 +110,7 @@
   .cooperation__map--nojs {
     height: 400px;
     background-image:
-      image-set("../../images/tablet/map-mobile@1x.webp" 1x type("image/webp"),
+      image-set("../../images/tablet/map-tablet@1x.webp" 1x type("image/webp"),
       "../../images/tablet/map-tablet@2x.webp" 2x type("image/webp"),
       "../../images/tablet/map-tablet@1x.jpg" 1x type("image/jpg"),
       "../../images/tablet/map-tablet@2x.jpg" 2x type("image/jpg"));
@@ -120,7 +120,7 @@
 @media (min-width: $desktop) {
   .cooperation__map--nojs {
     background-image:
-      image-set("../../images/desktop/map-mdesktop@1x.webp" 1x type("image/webp"),
+      image-set("../../images/desktop/map-desktop@1x.webp" 1x type("image/webp"),
       "../../images/desktop/map-desktop@2x.webp" 2x type("image/webp"),
       "../../images/desktop/map-desktop@1x.jpg" 1x type("image/jpg"),
       "../../images/desktop/map-desktop@2x.jpg" 2x type("image/jpg"));
